@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    background-size: contain;
+    background-image: url(WitcherWP.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    overflow-x: hidden; /* Permet de cacher la barre de defilement sur l'axe horizontal (x)*/
+}
+p {
+    margin: 0;
+}
+
+a { /* permet de laisser le liens de la meme couleur meme si déja cliqué (shlag version)*/
+    color: white ;
+}
+
+/* Classe pour l'affichage de la serie vedette */
+.mostView {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    font-size: 20px;
+}
+
+/* Gesion taille vecteur "play" et le "!" */
+.mostView img {
+    width: 20px;
+    height: 20px;
+    margin: 1px;
+
+}
+
+/* Classe pour le nom de la série vedette (à enlever si celui-ci sur l'image)*/
+.title {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 50px black;
+    font-size: 90px;
+    grid-row: 3 ;
+    grid-column: 1 / 5;
+}
+
+/*Classe permettant de rajouter des information (saisons, nouveauté)*/
+.new {
+    font-style: italic;
+    text-align: center;
+    color:red;
+    font-size: 20px;
+    grid-row: 4;
+    grid-column: 1 / 5;
+}
+
+/* Classe pour bouttons "regarder" et "plus d'informations" */
+.view {
+    width: 120px;
+    height: 30px;
+    color: lightgray;
+    background-color: grey;
+    border-radius: 5%;
+    padding: 10px;
+    margin: 10px;   
+    text-align: justify;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.infos {
+    width: 170px;
+    height: 30px;
+    color: lightgray;
+    background-color: grey;
+    border-radius: 5%;
+    padding: 10px;
+    margin: 10px;   
+    text-align: justify;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+    grid-row: 5;
+    grid-column: 3;
+}
+
+/* Classe qui englobe tous le carroussel */
+.display {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Boite pour intégration série */
+.box {
+    width: 25%;
+    height: 200px;
+    margin: 2px;
+    text-align: center;
+    /* border: 1px solid red; */
+    border-radius: 5%;
+}
+
+#Films{
+    display: flex;
+    align-content: flex-end;
+}
+
+
+/*Début footer*/
+footer {
+    height: 250px;
+    border-top: 1px dashed #000;
+    background-color: dark;
+    color:#000
+}
+
+/*Mise en page icon reseaux*/
+#socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 10px 30px 10px;
+}
+
+.reseaux {
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+}
+
+#socialMedia img {
+    width: 50px;
+    height: 50px;
+    background-color:white;
+    border: 1px solid white;
+    border-radius: 70%;
+    cursor: pointer;
+}
+
+
+/*Mise en page Services*/
+.services {
+    height: 80px;
+    align-content: justify;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 100px;    
+}
+
+.services a {
+    width: 300px;
+    text-align:left;
+    text-decoration: none;
+    color:#e6e3e3;
+    cursor: pointer;
+}
+
+
+
+
+/**/

@@ -1,0 +1,23 @@
+#MainSection{
+    display: flex;
+    height: 1000px;
+    background-color: aquamarine;
+}
+
+#MainSection #Description{
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#MainSection #Boutons{
+    display: flex;
+    background-color: green;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+    justify-content: center;
+}

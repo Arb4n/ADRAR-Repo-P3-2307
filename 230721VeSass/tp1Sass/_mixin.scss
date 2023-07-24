@@ -1,0 +1,12 @@
+@mixin basicStyle {
+
+    color: red($color: #000000);
+    background-color: $primaire;
+
+
+}
+
+@mixin rotate($deg: 0deg, ) {
+    transform: rotate($deg);
+    color: invert(black );
+}

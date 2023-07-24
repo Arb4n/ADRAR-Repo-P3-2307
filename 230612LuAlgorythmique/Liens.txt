@@ -1,0 +1,32 @@
+1>> Exercices Algo : 
+Pseudo :  [CDA34-23-01] Alban
+MDP: 4512
+https://www.algoblocs.fr/algoblocs.php?defi=28157
+1.1>> 
+https://www.algoblocs.fr/algoblocs.php?defi=28157
+
+1.2>> 
+Algoblocs by Pierre Coupechoux
+https://www.algoblocs.fr/algoblocs.php?defi=28157
+
+2>> Plateforme de dessin collaborative
+https://miro.com/fr/
+2.1>> Lien vers le miro de Pierre Coupechoux
+https://discord.com/channels/1097824334824878100/1097824336364187792/1118435255209181204
+https://miro.com/app/board/uXjVM_1UY1I=/
+
+
+3>> Lien voca Md 
+https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-
+
+4>> Je vous propose une autre série d'exercice aussi : https://pydefis.callicode.fr/
+
+
+5>> 230619
+Voir une table de vérité, logique booléenne. 
+
+cf. lois de deMorgan
+
+
+6>> In tableaux : 
+https://fr.wikipedia.org/wiki/Processeur_bas%C3%A9_sur_la_pile

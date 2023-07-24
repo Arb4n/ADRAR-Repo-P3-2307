@@ -1,0 +1,455 @@
+Pierre — 15/06/2023 17:22
+Pour ceux qui veulent tenter d'utiliser p5 (après avoir bien avancé dans les exos "classiques" !)
+Pierre — 15/06/2023 17:23
+Le site officiel : https://p5js.org/
+home | p5.js
+p5.js a JS client-side library for creating graphic and interactive experiences, based on the core principles of Processing.
+Il y a notamment une documentation, utile quand on cherche des informations sur un outil en particulier.
+On peut travailler directement dans un éditeur en ligne (c'est le lien "editor" sur le site) : https://editor.p5js.org/
+En se créant un compte sur le site (on peut utiliser google ou github), on peut enregistrer nos projets, et les retrouver facilement.
+J'ai écrit (un peu rapidement 😬) un petit programme pour vous faire une mini démo de ce que l'on peut faire avec l'outil.
+Ce programme est découpé en 9 parties (pour essayer de ne pas tout avoir d'un coup)
+Partie 1 :
+/*
+Le but de p5.js est de faire assez simplement des dessins/animations, en js.
+Cet exemple permet de montrer les fonctionnalités principales.
+*/
+
+/* Le code écrit dans la fonction setup (même si on ne sait pas encore exactement ce qu'est une fonction !) est le code qui sera lancé automatiquement par p5 lorsque le dessin va démarrer (quand on cliquera sur la flèche, en haut).
+On peut constater, que l'affichage de "Setup" ne se fait qu'une fois (on retrouve la console en bas du code).
+*/
+function setup() {
+  console.log("Setup");
+  createCanvas(400, 400);
+}
+
+
+function draw() {
+  background(220);
+}
+Partie 2 
+/*
+Le but de p5.js est de faire assez simplement des dessins/animations, en js.
+Cet exemple permet de montrer les fonctionnalités principales.
+*/
+
+/* Le code écrit dans la fonction setup (même si on ne sait pas encore exactement ce qu'est une fonction !) est le code qui sera lancé automatiquement par p5 lorsque le dessin va démarrer (quand on cliquera sur la flèche, en haut).
+On peut constater, que l'affichage de "Setup" ne se fait qu'une fois (on retrouve la console en bas du code).
+*/
+function setup() {
+  console.log("Setup");
+  createCanvas(400, 400);
+}
+
+/* Le code de la fonction draw est exécuté automatiquement par p5, après le setup, **en boucle à l'infini**.
+Autrement dit, dès que le setup est terminé, l'ordinateur va faire :
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+...
+
+On peut constater ce comportement avec le console.log("Draw");
+*/
+function draw() {
+  console.log("Draw");
+  background(220);
+}
+Partie 3 :
+/*
+Le but de p5.js est de faire assez simplement des dessins/animations, en js.
+Cet exemple permet de montrer les fonctionnalités principales.
+*/
+
+/* Le code écrit dans la fonction setup (même si on ne sait pas encore exactement ce qu'est une fonction !) est le code qui sera lancé automatiquement par p5 lorsque le dessin va démarrer (quand on cliquera sur la flèche, en haut).
+On peut constater, que l'affichage de "Setup" ne se fait qu'une fois (on retrouve la console en bas du code).
+*/
+function setup() {
+  console.log("Setup");
+  
+  // Créer une zone de dessin de 600px x 400px
+  createCanvas(600, 400);
+}
+
+/* Le code de la fonction draw est exécuté automatiquement par p5, après le setup, **en boucle à l'infini**.
+Autrement dit, dès que le setup est terminé, l'ordinateur va faire :
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+...
+
+On peut constater ce comportement avec le console.log("Draw");
+*/
+function draw() {
+  console.log("Draw");
+  
+  // Remplir le dessin d'une couleur unique.
+  // Un nombre = nuance de gris
+  // Trois nombres = RGB
+  // Quatre nombres = RGBa
+  //background(220);
+  background(255,200,0);
+  
+  // Changer la couleur du crayon : je veux dessiner en vert maintenant
+  stroke(0,255,0);
+  
+  // Un point vert (si si, il est bien là)
+  point(200,100);
+}
+Pierre — 15/06/2023 17:30
+Partie 4 :
+/* Le code écrit dans la fonction setup (même si on ne sait pas encore exactement ce qu'est une fonction !) est le code qui sera lancé automatiquement par p5 lorsque le dessin va démarrer (quand on cliquera sur la flèche, en haut).
+On peut constater, que l'affichage de "Setup" ne se fait qu'une fois (on retrouve la console en bas du code).
+*/
+function setup() {
+  console.log("Setup");
+  
+  // Créer une zone de dessin de 600px x 400px
+  createCanvas(600, 400);
+}
+
+/* Le code de la fonction draw est exécuté automatiquement par p5, après le setup, **en boucle à l'infini**.
+Autrement dit, dès que le setup est terminé, l'ordinateur va faire :
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+...
+
+On peut constater ce comportement avec le console.log("Draw");
+*/
+function draw() {
+  console.log("Draw");
+  
+  // Remplir le dessin d'une couleur unique.
+  // Un nombre = nuance de gris
+  // Trois nombres = RGB
+  // Quatre nombres = RGBa
+  //background(220);
+  background(255,200,0);
+  
+  // Changer la couleur du crayon : je veux dessiner en vert maintenant
+  stroke(0,255,0);
+  
+  // Un point vert (si si, il est bien là)
+  point(200,100);
+  
+  // Changer la taille du crayon
+  strokeWeight(10);
+  point(300, 350);
+  
+  // Il ne faut pas oublier que l'ordinateur fait plein de fois le `draw` chaque seconde (cf le console.log) ! Donc comme à la fin du premier dessin (de la première frame de l'animation) je prends un gros crayon, j'ai encore ce gros crayon en main quand je fais le premier point, en haut !
+  // Donc dès la deuxième image (au bout de quelques dizaines de millisecondes, le premier point est aussi gros que le deuxième.
+}
+Partie 5 :
+function setup() {
+  console.log("Setup");
+  
+  // Créer une zone de dessin de 600px x 400px
+  createCanvas(600, 400);
+}
+
+/* Le code de la fonction draw est exécuté automatiquement par p5, après le setup, **en boucle à l'infini**.
+Autrement dit, dès que le setup est terminé, l'ordinateur va faire :
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+...
+
+On peut constater ce comportement avec le console.log("Draw");
+*/
+function draw() {
+  console.log("Draw");
+  
+  // Remplir le dessin d'une couleur unique.
+  // Un nombre = nuance de gris
+  // Trois nombres = RGB
+  // Quatre nombres = RGBa
+  //background(220);
+  background(255,200,0);
+  
+  // Changer la couleur du crayon : je veux dessiner en vert maintenant
+  stroke(0,255,0);
+  
+  // Un point vert (si si, il est bien là)
+  point(200,100);
+  
+  // Changer la taille du crayon
+  strokeWeight(10);
+  point(300, 350);
+  
+  // Il ne faut pas oublier que l'ordinateur fait plein de fois le `draw` chaque seconde (cf le console.log) ! Donc comme à la fin du premier dessin (de la première frame de l'animation) je prends un gros crayon, j'ai encore ce gros crayon en main quand je fais le premier point, en haut !
+  // Donc dès la deuxième image (au bout de quelques dizaines de millisecondes, le premier point est aussi gros que le deuxième.
+  
+  // Faire une ligne
+  line(50, 50, 100, 25);
+  
+  // Faire un cercle
+  circle(400,200, 50);
+  // Par défaut, les formes fermées sont remplies en blanc.
+}
+Partie 6 :
+function setup() {
+  console.log("Setup");
+  
+  // Créer une zone de dessin de 600px x 400px
+  createCanvas(600, 400);
+}
+
+/* Le code de la fonction draw est exécuté automatiquement par p5, après le setup, **en boucle à l'infini**.
+Autrement dit, dès que le setup est terminé, l'ordinateur va faire :
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+- faire une fois le code dans draw
+- afficher le résultat à l'écran
+...
+
+On peut constater ce comportement avec le console.log("Draw");
+*/
+function draw() {
+  console.log("Draw");
+  
+  // Remplir le dessin d'une couleur unique.
+  // Un nombre = nuance de gris
+  // Trois nombres = RGB
+  // Quatre nombres = RGBa
+  //background(220);
+  background(255,200,0);
+  
+  // Changer la couleur du crayon : je veux dessiner en vert maintenant
+  stroke(0,255,0);
+  
+  // Un point vert (si si, il est bien là)
+  point(200,100);
+  
+  // Changer la taille du crayon
+  strokeWeight(10);
+  point(300, 350);
+  
+  // Il ne faut pas oublier que l'ordinateur fait plein de fois le `draw` chaque seconde (cf le console.log) ! Donc comme à la fin du premier dessin (de la première frame de l'animation) je prends un gros crayon, j'ai encore ce gros crayon en main quand je fais le premier point, en haut !
+  // Donc dès la deuxième image (au bout de quelques dizaines de millisecondes, le premier point est aussi gros que le deuxième.
+  
+  // Faire une ligne
+  line(50, 50, 100, 25);
+  
+  // Faire un cercle
+  circle(400,200, 50);
+  // Par défaut, les formes fermées sont remplies en blanc.
+  
+  // On peut choisir la couleur de remplissage avec fill (même principe que le background, pour la couleur) :
+  fill(255,0,0);
+  circle(300,200,50);
+  // Ou bien désactiver totalement le remplissage :
+  noFill();
+  circle(200, 100, 150);
+}
+Partie 7 :
+function setup() {
+  console.log("Setup");
+  
+  // Créer une zone de dessin de 600px x 400px
+  createCanvas(600, 400);
+}
+
+function draw() {
+  console.log("Draw");
+  
+  // Remplir le dessin d'une couleur unique.
+  // Un nombre = nuance de gris
+  // Trois nombres = RGB
+  // Quatre nombres = RGBa
+  //background(220);
+  background(255,200,0);
+  
+  // Changer la couleur du crayon : je veux dessiner en vert maintenant
+  stroke(0,255,0);
+  
+  // Un point vert (si si, il est bien là)
+  point(200,100);
+  
+  // Changer la taille du crayon
+  strokeWeight(10);
+  point(300, 350);
+  
+  // Il ne faut pas oublier que l'ordinateur fait plein de fois le `draw` chaque seconde (cf le console.log) ! Donc comme à la fin du premier dessin (de la première frame de l'animation) je prends un gros crayon, j'ai encore ce gros crayon en main quand je fais le premier point, en haut !
+  // Donc dès la deuxième image (au bout de quelques dizaines de millisecondes, le premier point est aussi gros que le deuxième.
+  
+  // Faire une ligne
+  line(50, 50, 100, 25);
+  
+  // Faire un cercle
+  circle(400,200, 50);
+  // Par défaut, les formes fermées sont remplies en blanc.
+  
+  // On peut choisir la couleur de remplissage avec fill (même principe que le background, pour la couleur) :
+  fill(255,0,0);
+  circle(300,200,50);
+  // Ou bien désactiver totalement le remplissage :
+  noFill();
+  circle(200, 100, 150);
+  
+  // Ellipse (cercle déformé)
+  ellipse(500, 300, 200, 100);
+  
+  // Carré
+  square(30, 200, 50);
+  
+  // Rectangle
+  rect(300, 80, 200, 50);
+}
+Partie 8 :
+function setup() {
+  console.log("Setup");
+  
+  // Créer une zone de dessin de 600px x 400px
+  createCanvas(600, 400);
+}
+
+function draw() {
+  console.log("Draw");
+  
+  // Remplir le dessin d'une couleur unique.
+  // Un nombre = nuance de gris
+  // Trois nombres = RGB
+  // Quatre nombres = RGBa
+  //background(220);
+  background(255,200,0);
+  
+  // Changer la couleur du crayon : je veux dessiner en vert maintenant
+  stroke(0,255,0);
+  
+  // Un point vert (si si, il est bien là)
+  point(200,100);
+  
+  // Changer la taille du crayon
+  strokeWeight(10);
+  point(300, 350);
+  
+  // Il ne faut pas oublier que l'ordinateur fait plein de fois le `draw` chaque seconde (cf le console.log) ! Donc comme à la fin du premier dessin (de la première frame de l'animation) je prends un gros crayon, j'ai encore ce gros crayon en main quand je fais le premier point, en haut !
+  // Donc dès la deuxième image (au bout de quelques dizaines de millisecondes, le premier point est aussi gros que le deuxième.
+  
+  // Faire une ligne
+  line(50, 50, 100, 25);
+  
+  // Faire un cercle
+  circle(400,200, 50);
+  // Par défaut, les formes fermées sont remplies en blanc.
+  
+  // On peut choisir la couleur de remplissage avec fill (même principe que le background, pour la couleur) :
+  fill(255,0,0);
+  circle(300,200,50);
+  // Ou bien désactiver totalement le remplissage :
+  noFill();
+  circle(200, 100, 150);
+  
+  // Ellipse (cercle déformé)
+  ellipse(500, 300, 200, 100);
+  
+  // Carré
+  square(30, 200, 50);
+  
+  // Rectangle
+  rect(300, 80, 200, 50);
+}
+
+
+// Le code de la function mouseClicked sera exécuté automatiquement quand l'utilisateur cliquera dans le dessin (et aussitôt après, les `draw` reprendront).
+function mouseClicked() {
+  console.log("Clic !");
+}
+Partie 9 :
+function setup() {
+  console.log("Setup");
+  
+  // Créer une zone de dessin de 600px x 400px
+  createCanvas(600, 400);
+}
+
+function draw() {
+  console.log("Draw");
+  
+  // Remplir le dessin d'une couleur unique.
+  // Un nombre = nuance de gris
+  // Trois nombres = RGB
+  // Quatre nombres = RGBa
+  //background(220);
+  background(255,200,0);
+  
+  // Changer la couleur du crayon : je veux dessiner en vert maintenant
+  stroke(0,255,0);
+  
+  // Un point vert (si si, il est bien là)
+  point(200,100);
+  
+  // Changer la taille du crayon
+  strokeWeight(10);
+  point(300, 350);
+  
+  // Il ne faut pas oublier que l'ordinateur fait plein de fois le `draw` chaque seconde (cf le console.log) ! Donc comme à la fin du premier dessin (de la première frame de l'animation) je prends un gros crayon, j'ai encore ce gros crayon en main quand je fais le premier point, en haut !
+  // Donc dès la deuxième image (au bout de quelques dizaines de millisecondes, le premier point est aussi gros que le deuxième.
+  
+  // Faire une ligne
+  line(50, 50, 100, 25);
+  
+  // Faire un cercle
+  circle(400,200, 50);
+  // Par défaut, les formes fermées sont remplies en blanc.
+  
+  // On peut choisir la couleur de remplissage avec fill (même principe que le background, pour la couleur) :
+  fill(255,0,0);
+  circle(300,200,50);
+  // Ou bien désactiver totalement le remplissage :
+  noFill();
+  circle(200, 100, 150);
+  
+  // Ellipse (cercle déformé)
+  ellipse(500, 300, 200, 100);
+  
+  // Carré
+  square(30, 200, 50);
+  
+  // Rectangle
+  rect(300, 80, 200, 50);
+  
+  // p5 nous fournit deux variables qui contiennent les coordonnées de la souris dans le dessin.
+  // Pas besoin de les créer ni de les modifier, p5 le fait pour nous !
+  stroke(0,0,255);
+  point(mouseX, mouseY);
+}
+
+
+// Le code de la function mouseClicked sera exécuté automatiquement quand l'utilisateur cliquera dans le dessin (et aussitôt après, les `draw` reprendront).
+function mouseClicked() {
+  console.log("Clic !");
+}
+C'est le même fichier, mais construit incrémentalement !
+Pour vous entraîner en p5, vous pouvez dessiner un peu ce que vous voulez. Je vous donne quelques exemples :
+une ligne de carrés noirs sur fond blanc
+plusieurs lignes de carrés noirs sur fond blanc
+un point qui apparaît à un endroit aléatoire de l'écran (https://p5js.org/reference/#/p5/random)
+une balle qui se déplace
+une balle qui se déplace en rebondissant sur les murs
+un poisson dans un aquarium
+ 

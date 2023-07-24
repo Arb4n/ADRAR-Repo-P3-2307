@@ -1,0 +1,279 @@
+Variable : un nom auquel on peut y stocker une valeur. 
+on peut lire la valeur de la variable
+on peut la modifier
+on peut la comparer
+
+Il faut qu'elle existe : on v la créer
+Ensuite, on va l'affecter affectation
+On peut la lire, juste en mettant son nom. 
+
+
+
+Boucles : 
+
+
+Division euclydienne : 
+
+
+math.floor 
+
+
+
+
+
+230619 
+
+
+
+LES FONCTIONS : 
+
+
+1ere écrite :  
+c>> alert("Bonjour ! ";
+c<<
+
+1/ Point de vue exter : 
+= j'ai un outil dispo, et on se contente
+de l'utiliser. 
+
+On peut dessiner les fonctions 
+comme des boîtes opaques. 
+On a pas accès au contenu tant 
+qu'elle est fermée. 
+cet outil, on ne peut que 
+le démarrer avec un bouton, 
+et il a un nom 'alert'.
+
+ n!! la parenthèse démarre 
+la fonction.
+On met le nom de l'outil en question,
+et les parenthèses démarrent
+la fonction. 
+Pas de pop up alert si 
+on ne démarre pas la fonction 
+avec les (). 
+
+Il faut donner une info
+à la fonction  ; 
+exemple algoblock : 
+on ne lui dit pas 'avance', 
+mais 'avance de tant'   
+(forward (100). 
+
+d>> La parenthèse  est appelée 
+* l'entrée de la fonction *.
+
+DONC 1ere variante : on donne 
+des infos à la fonction. 
+
+
+2EME VARIANTE : ce qu'on a vu avec 
+Pikachu. 
+Quand on écrivait pikachu, 
+on disait : la fonction vaut tant. 
+La précédente ne donne pas 
+un résultat. 
+Pikachu donne un résultat. 
+
+!!>> une fonction peut donner un 
+résultat en retour. 
+C'est ce qu'on appelle 
+d>>
+* la SORTIE DE LA FONCTION * 
+d<<
+
+ex>> si on a cette boîte noire
+qui s'appelle pikachu, on a nos 
+parenthèses pour démarrer 
+la fonctin, puis on a les deux args
+/valeurs / entrées sde la fonction
+dans les parenthèses. 
+Les deux valeurs 4,10 sont 
+entrées dans l'appel. 
+Et une fois que ça a finit d'appeler,
+ça renvoie une valeur / résultat. 
+Tout ce machin-là vaut 40
+L'ordinateur remplace tout ce truc-là
+par 40.
+C'est le même principe : en maths,
+2*(3+4) : on va remplcer (3+4) 
+par 7 dans notre tête ;)
+
+SUr la premère variante, on a un résultat, 
+mais pas de sortie
+
+C'est le point de vue externe. 
+On utilise juste un outil, sans voir
+ce qu'il s'y passe. 
+
+
+2/ PONT DE VUE EXTERNE
+On n'utilise pas juste la fonction,
+on *la construit*
+Il y a un squelette minimal : 
+function nomFonction() {
+}
+
+Ce qu'on met dans les accolades
+est ce que va faire la fonction 
+quand on va l'appeler. 
+d>> C'est le *Corps de la fonction*
+d<<
+
+_Ici, la variable est créée 
+automatiquement quand la 
+fonction est appelée._
+
+Le but de cette variable
+va être de stocker l'information
+que l'utilisateur va donner 
+à la fonction. 
+d>> l'argument (/paramètres)
+d'une fonction : variables entre 
+parenthèses : 
+
+_ name est un argument de la fonction 
+sayHi _
+
+D'un côté, la fonction est terminée,
+ de l'autre, je donne un résultat. 
+
+On crée une variable n dans 
+la fonction, et de l'autre, 
+on met  ?
+
+_ c'est la 
+d>>  * valeur de retour*  ;
+d<< 
+l'utilisateur ne voit pas tout 
+ce qui se passe là dans la boîte
+
+Et interne : on voir qu'on démarre 
+avec la fonction 25, on stocke entre 
+pointillés,
+on fait l'opé, 
+on donne le résultat 75, 
+et on envoie cette valeur de retour
+à l'utilisateur grâce au 
+momt de clé 'return'. _
+
+
+
+_ ICI : On inscrit un squelette
+de fonction 
+La fonction n'est pas utilisée, 
+donc rien ne s'est affiché 
+dans la fonction. 
+On a créé un outil, 
+mais on ne l'a pas utilisé
+ou initié ou déclenché. 
+Il faut appeler la fonction. 
+--> sayHello 
+Le bonjour s'est affiché dans 
+la console. 
+Les parenthèses démarrent. 
+Si on ne les met pas, R. 
+
+
+2ème fonction : 
+sayHi ; elle s'attend à recevoir 
+une info. 
+D'abord, elle reçoit un nom 
+en entrée, et l'affiche 
+dans la console. 
+Elle s'attend à recevoir un nom,
+ou une valeur. 
+!!!>> la variable n'est créée
+que quand le fonction est appelée.
+Sans valeur, elle n'est 
+même pas créée non plus.
+Si on veut utiliser la fonction 
+en lui donnant une information, 
+
+Si on appelle la fonction
+en notant sayHi("Pierre"), 
+Hi Pierre est affiché. 
+Mais si on appelle la fonction 
+avec la variable : 
+sayHi(name), on obtient une erreur. 
+La variable name, quand elle est 
+créée,
+elle n'a été créée que 
+dans la boîte noire. 
+La variable reste dans la fonction. 
+
+ici, on est hors de la fonction
+avec AZERTY, donc la console 
+l'affiche. 
+Entre la variable name dans 
+la fonction et celle dehors,
+on a deux univers différents. 
+
+DONC On peut donner plusieurs 
+infos à une fonction. 
+_
+
+_++ Une fonction peut 
+donner un résultat en retour.
+
+_ c'est comme si on avait écrit 
+45 à la place de triple 15 _
+
+_ Le 45 est donné à la fonction
+console.log() 
+
+
+_CEtte fonction va commencer 
+par dire : _""_
+ELle va donner le résultat
+number+10, 
+et afficher "j'ai trové un résultat"
+> c'est la fonction. 
+Et après, on appelle un 
+"bonjour",
+on crée la variable number. 
+
+_
+D'abord : 1: Bonjour
+2: number = 2
+3: on appelle la fonction test 
+= 100+2 = 102
+console.log dans la fonction : 
+on m'a donné la valeur 102
+6: return = on s'arrête là ? 
+sortie de la fonction = 112
+cad que tout le machin 
+=112
+Finalement, on ne le sort pas 
+Il ne sert pas .
+
+7:on fait l'opération 2+1000 
+=1002
+
+DONC 2 pièges : 
+console.log avant return
+= "unreachable codede.."
+
+ 
+__ qu'est-ce ..?. bordel
+écouteurs down
+
+_
+
+c>>
+
+function test(number) {
+    console.log("On m'a donné la valeur", number);
+    return number+10;
+    console.log("J'ai trouvé le résultat : c'est", number+10);
+}
+
+
+
+console.log("Bonjour");
+let number = 2;
+test(number+100);
+console.log(test(number+1000));
+console.log("Au revoir");
+
+c<<

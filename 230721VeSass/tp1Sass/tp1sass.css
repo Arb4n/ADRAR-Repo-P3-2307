@@ -1,0 +1,43 @@
+button {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  margin: 1em 5em 1em 5em;
+  border-radius: 5%;
+  background-color: rgb(79, 16, 238);
+  margin: 2em;
+  color: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+button:hover {
+  scale: 2;
+  background-color: red;
+  color: rgb(79, 16, 238);
+}
+
+h1 {
+  background-color: rgb(246, 64, 61);
+  padding: 1em;
+  margin: 1em 5em 1em 5em;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: rgb(32, 6, 247);
+}
+
+.btn2 {
+  transform: rotate(24deg);
+  color: white;
+}
+
+.box1 {
+  width: 15%;
+  padding: 5em;
+  background-color: aquamarine;
+  color: 0;
+  transform: rotate(24deg);
+  color: white;
+}/*# sourceMappingURL=tp1sass.css.map */

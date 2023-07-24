@@ -1,0 +1,39 @@
+body {
+  background-color: antiquewhite;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  background-color: beige;
+}
+
+ul {
+  background-color: red;
+  list-style-type: none;
+  padding: 1em;
+  border-radius: 5%;
+}
+
+li {
+  padding: 1em;
+}
+
+.btn1 {
+  border-radius: 50%;
+}
+.btn1:hover {
+  color: white;
+  scale: 2;
+  border: double rgba(9, 255, 0, 0.466);
+}
+.btn1:onclick body {
+  color: white;
+  background-color: black;
+}
+.btn1:active body {
+  color: white;
+  background-color: black;
+}/*# sourceMappingURL=darkMode.css.map */

@@ -1,0 +1,19 @@
+
+div.d-flex = racc pour classes 
+alt+shift+f
+
+
+!! Think of div-ing everything
+
+>>  l. 66-79-91 : to padd the inside of each cell, you gottsa do that;
+padding in l.64 does some wird thing.
+
+>> L.84-96: ne pas garder le flex
+flec le p avec contenur 2 et go.
+
+>> MAIS !! en Colonne 1, 
+modif! 
+DONC add mt-auto l.75
+et h-100l.67
+
+

@@ -1,0 +1,5 @@
+// Répéter 3 fois
+for (let i = 0 ; i < 3 ; i++) {
+    forward(100);
+    left(120);
+}

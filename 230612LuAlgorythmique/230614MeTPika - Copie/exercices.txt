@@ -1,0 +1,819 @@
+pikachu(1,4)
+
+Je crée les variables a et b, et je mets 1 et 4 dedans.
+Je crée une variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans.
+Est-ce que i(0) < a(1) ? Oui
+    J'incrémente result(0) de b(4) -> result passe à 4.
+J'incrémente i(0) de 1 -> i passe à 1.
+Est-ce que i(1) < a(1) ? Non, la boucle est terminée.
+J'ai trouvé la solution : 4
+
+Envoyer un message dans #🧮-algo
+
+
+
+PIKACHU
+
+Question: 4,10
+
+
+Je crée les variables a et b, et je mets 4 et 10 dedans. 
+Je crée une variable result et je mets 0 dedans. 
+Début de la boucle : je crée i et je mets 0 dedans. 
+est-ce que i(0) < a (4)? Oui
+    J'incrémente result(0) de b(10), et result passe à 10. 
+    J'incrémente i(0) de 1, et i passe à 1.
+    est-ce que i(1) < a(4) ? Oui, une autre boucle commence.
+
+    La boucle va revenir 3 fois, 4 fois en tout ; 
+    result aura une valeur de 40. 
+
+    
+Pikachu (3,0)
+
+Je crée les variables a et b, et je mets 3 et 0 dedans. 
+Je crée une variable result et je mets 0 dedans. 
+Début de la boucle : je crée i et je mets 0 dedans. 
+est-ce que i(0) < a (3)? Oui
+    J'incrément result(0) de b(0), et result passe à 0. 
+    J'incrémente i(0) de 1, et i passe à 1.
+    est-ce que i(1) < a(3) ? Oui, une autre boucle commence.
+
+    La boucle est opérée 3 fois, pour un ajout de b(0) à chaque fois.
+    result aura une valeur de 0. 
+
+
+
+
+
+PLAFOND
+Plafond(2,3)
+On crée les variables a et b, on met respectivement 2 et 3 dedans.
+
+
+
+
+
+TABLEUR
+Tableur 1,1 
+On crée les variables a et b, on met respectivement 
+1 et 1 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle : on met i, à i est assignée la valeur de 0.
+On vérifie que i <= a : oui.
+On ajoute b(1) à result(0). 
+result = 1
+On incrémente i(0) de 1, i(0) passe & i(1).
+
+Est-ce que i<=a ? oui, i(1) <= a(1) , une autre boucle commence. 
+on ajoute b(1) à result(1) ; 
+result = 2
+On incrémente i(1) de 1, i(1) passe à i(2).
+
+On vérifie que i(2) <= a(1) : non. 
+
+La boucle se termine. 
+La valeur affichée pour result est 2. 
+
+_____
+
+Tableur 4,1
+
+On crée les variables a et b, on met respectivement 
+4 et 1 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) <= a(4) : oui.
+On ajoute b(1) à result(0). 
+result = 1
+On incrémente i(0) de 1, i(0) passe à i(1).
+
+Est-ce que i<=a ? oui, i(1) <= a(4) , une autre boucle commence. 
+on ajoute b(1) à result(1) ; 
+result = 2
+On incrémente i(1) de 1, i(1) passe à i(2).
+
+Est-ce que i<=a ? oui, i(2) <= a(4) , une autre boucle commence. 
+on ajoute b(1) à result(2) ; 
+result = 3
+On incrémente i(2) de 1, i(2) passe à i(3).
+
+Est-ce que i<=a ? oui, i(3) <= a(4) , une autre boucle commence. 
+on ajoute b(1) à result(3) ; 
+result = 4
+On incrémente i(3) de 1, i(3) passe à i(4).
+
+Est-ce que i<=a ? oui, i(4) <= a(4) , une autre boucle commence. 
+on ajoute b(1) à result(4) ; 
+result = 5
+On incrémente i(4) de 1, i(4) passe à i(5).
+
+Est-ce que i(5) <= a(4) ? Non
+
+
+La boucle se termine. 
+La valeur affichée pour result est 5. 
+
+_______ 
+
+
+Tableur 4,10
+
+On crée les variables a et b, on met respectivement 
+4 et 10 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) <= a(4) : oui.
+On ajoute b(10) à result(0). 
+result = 10
+On incrémente i(0) de 1, i(0) passe à i(1).
+
+Est-ce que i<=a ? oui, i(1) <= a(4) , une autre boucle commence. 
+on ajoute b(10) à result(10) ; 
+result = 20
+On incrémente i(1) de 1, i(1) passe à i(2).
+
+Est-ce que i<=a ? oui, i(2) <= a(4) , une autre boucle commence. 
+on ajoute b(10) à result(20) ; 
+result = 30
+On incrémente i(2) de 1, i(2) passe à i(3).
+
+Est-ce que i<=a ? oui, i(3) <= a(4) , une autre boucle commence. 
+on ajoute b(10) à result(30) ; 
+result = 40
+On incrémente i(3) de 1, i(3) passe à i(4).
+
+Est-ce que i<=a ? oui, i(4) <= a(4) , une autre boucle commence. 
+on ajoute b(10) à result(40) ; 
+result = 50
+On incrémente i(4) de 1, i(4) passe à i(5).
+
+Est-ce que i(5) <= a(4) ? Non
+
+
+La boucle se termine. 
+La valeur affichée pour result est 50. 
+
+
+_________
+
+Tableur 3,0
+
+
+On crée les variables a et b, on met respectivement 
+3 et 0 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) <= a(3) : oui.
+On ajoute b(0) à result(0). 
+result = 0
+On incrémente i(0) de 1, i(0) passe à i(1).
+
+Est-ce que i<=a ? oui, i(1) <= a(4) , une autre boucle commence. 
+on ajoute b(10) à result(10) ; 
+result = 20
+On incrémente i(1) de 1, i(1) passe à i(2).
+
+Est-ce que i<=a ? oui, i(2) <= a(4) , une autre boucle commence. 
+on ajoute b(10) à result(20) ; 
+result = 30
+On incrémente i(2) de 1, i(2) passe à i(3).
+
+Est-ce que i<=a ? oui, i(3) <= a(4) , une autre boucle commence. 
+on ajoute b(10) à result(30) ; 
+result = 40
+On incrémente i(3) de 1, i(3) passe à i(4).
+
+Est-ce que i<=a ? oui, i(4) <= a(4) , une autre boucle commence. 
+on ajoute b(10) à result(40) ; 
+result = 50
+On incrémente i(4) de 1, i(4) passe à i(5).
+
+Est-ce que i(5) <= a(4) ? Non
+
+
+La boucle se termine. 
+La valeur affichée pour result est 50. 
+
+
+
+______________
+
+
+LOL
+
+
+lol 0,7
+
+
+On crée les variables a et b, on met respectivement 
+0 et 7 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) < a(0) : non.
+La boucle se termine. 
+Result reste équivalent à une valeur de 0. 
+
+_____
+
+
+lol 2,3
+
+On crée les variables a et b, on met respectivement 
+2 et 3 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) < a(2) : oui.
+On ajoute b(3) à result(0). 
+result = 3
+On incrémente i(0) de 0.5, i(0) passe à i(0.5).
+
+Est-ce que i(0.5) < a(2) ? 
+Oui, i(0.5) < a(2) , une autre boucle commence. 
+On ajoute b(3) à result(3) ; 
+result = 6
+On incrémente i(0.5) de 0.5, i(0.5) passe à i(1).
+
+Est-ce que i < a ? oui, i(1) < a(2) , une autre boucle commence. 
+on ajoute b(3) à result(6) ; 
+result = 9
+On incrémente i(1) de 0.5, i(1) passe à i(1.5).
+
+Est-ce que i < a ? oui, i(1.5) < a(2) , une autre boucle commence. 
+on ajoute b(3) à result(9) ; 
+result = 12
+On incrémente i(1.5) de 0.5, i(1.5) passe à i(2).
+
+Est-ce que i(2) < a(2) ? Non 
+
+La boucle se termine. 
+La valeur affichée pour result est 50. 
+
+
+_____
+
+lol 3,2
+
+On crée les variables a et b, on met respectivement 
+3 et 2 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) < a(3) : oui.
+On ajoute b(2) à result(0). 
+result = 2
+On incrémente i(0) de 0.5, i(0) passe à i(0.5).
+
+Est-ce que i(0.5) < a(3) ? 
+Oui, i(0.5) < a(3) , une autre boucle commence. 
+On ajoute b(2) à result(2) ; 
+result = 4
+On incrémente i(0.5) de 0.5, i(0.5) passe à i(1).
+
+Est-ce que i < a ? oui, i(1) < a(3) , une autre boucle commence. 
+on ajoute b(2) à result(6) ; 
+result = 6
+On incrémente i(1) de 0.5, i(1) passe à i(1.5).
+
+Est-ce que i < a ? oui, i(1.5) < a(3) , une autre boucle commence. 
+on ajoute b(2) à result(6) ; 
+result = 8
+On incrémente i(1.5) de 0.5, i(1.5) passe à i(2).
+
+Est-ce que i < a ? oui, i(2) < a(3) , une autre boucle commence. 
+on ajoute b(2) à result(8) ; 
+result = 10
+On incrémente i(2) de 0.5, i(2) passe à i(2.5).
+
+Est-ce que i < a ? oui, i(2.5) < a(3) , une autre boucle commence. 
+on ajoute b(2) à result(10) ; 
+result = 12
+On incrémente i(2.5) de 0.5, i(2.5) passe à i(3).
+
+Est-ce que i(3) < a(3) ? Non 
+
+La boucle se termine. 
+La valeur affichée pour result est 12. 
+
+
+___
+
+
+lol 10,10
+
+On crée les variables a et b, on met respectivement 
+10 et 10 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) < a(10) : oui.
+On ajoute b(10) à result(0). 
+result = 10
+On incrémente i(0) de 0.5, i(0) passe à i(0.5).
+
+Est-ce que i(0.5) < a(10) ? 
+Oui, i(0.5) < a(10) , une autre boucle commence. 
+On ajoute b(10) à result(10) ; 
+result = 20
+On incrémente i(0.5) de 0.5, i(0.5) passe à i(1).
+
+ETC. ...
+
+Result = 200
+
+
+
+
+_____ 
+
+lol 65,2
+
+On crée les variables a et b, on met respectivement 
+65 et 2 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) < a(65) : oui.
+On ajoute b(2) à result(0). 
+result = 2
+On incrémente i(0) de 0.5, i(0) passe à i(0.5).
+
+Est-ce que i(0.5) < a(65) ? 
+Oui, i(0.5) < a(65) , une autre boucle commence. 
+On ajoute b(2) à result(2) ; 
+result = 4
+On incrémente i(0.5) de 0.5, i(0.5) passe à i(1).
+
+ETC. ...
+
+Result = 
+
+
+Est-ce que i < a ? oui, i(1) < a(3) , une autre boucle commence. 
+on ajoute b(2) à result(6) ; 
+result = 6
+On incrémente i(1) de 0.5, i(1) passe à i(1.5).
+
+Est-ce que i < a ? oui, i(1.5) < a(3) , une autre boucle commence. 
+on ajoute b(2) à result(6) ; 
+result = 8
+On incrémente i(1.5) de 0.5, i(1.5) passe à i(2).
+
+Est-ce que i < a ? oui, i(2) < a(3) , une autre boucle commence. 
+on ajoute b(2) à result(8) ; 
+result = 10
+On incrémente i(2) de 0.5, i(2) passe à i(2.5).
+
+Est-ce que i < a ? oui, i(2.5) < a(3) , une autre boucle commence. 
+on ajoute b(2) à result(10) ; 
+result = 12
+On incrémente i(2.5) de 0.5, i(2.5) passe à i(3).
+
+Est-ce que i(3) < a(3) ? Non 
+
+La boucle se termine. 
+La valeur affichée pour result est 12. 
+
+
+
+
+
+
+
+__________________
+_______________________
+
+WOLWERINE
+
+
+Wolverine 1,3 
+
+On crée les variables a et b, on met respectivement 
+1 et 3 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle i : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) < a(1) : oui.
+    Début de boucle j : on crée j, j est assigné à la valeur 0. 
+    On vérifie que j(0) est inférieur à b(3) : oui. 
+    On incrémente result(0) de 1. 
+    result = 1
+    On incrémente j(0) de 1. 
+    j = 1
+    
+    On vérifie que j(1) est inférieur à b(3) : oui. 
+    On incrémente result(1) de 1. 
+    result = 2
+    on incrémente j(1) de 1. 
+    j = 2
+    
+    On vérifie que j(2) est inférieur à b(3) : oui. 
+    On incrémente result(2) de 1. 
+    result = 3
+    on incrémente j(2) de 1. 
+    j = 3
+
+    On vérifie que j(3) est inférieur à b(3) : non. 
+    fin de boucle. 
+On incrémente i(0) de 1. 
+i vaut 1. 
+
+On vérifie que i(1) est inférieur à a(1) : non. 
+La boucle a tourné une fois. 
+On affiche Result vaut 3. 
+
+
+
+
+Wolverine 2,0 
+
+On crée les variables a et b, on met respectivement 
+2 et 0 dedans. 
+On crée la variable result, on lui donne la valeur 0.
+
+Début de boucle i : on met i, à i est assignée la valeur de 0.
+On vérifie que i(0) < a(2) : oui.
+    Début de boucle j : on crée j, j est assigné à la valeur 0. 
+    On vérifie que j(0) est inférieur à b(0) : non. 
+    Fin de boucle. 
+Incrémentation de i(0) : i(1).
+On vérifie que i(1)<a(2) : oui.
+
+    Début de boucle j : on crée j, j est assigné à la valeur 0. 
+    On vérifie que j(0) est inférieur à b(0) : non. 
+    Fin de boucle. 
+Incrémentation de i(1) : i(2).
+On vérifie que i(2)<a(2) : Non.
+Fin de boucle. 
+La valeur de result est restée à 0. 
+
+
+
+
+
+
+_______________________
+_______________________
+
+
+VENTILATEUR
+Ventilateur 2,3
+
+On crée les variables a et b. 
+On assigne les valeurs 2 à a : a(2) et 3 à b : b(3). 
+On crée la variable result, on lui assigne la valeur 0 : result(0).
+
+
+	display_question(ventilateur,[4,5],true);
+
+	display_question(ventilateur,[0,12]);
+
+	display_question(ventilateur,[12,0]);
+
+	display_question(ventilateur,[78,65]);
+
+	display_question(ventilateur,[1,15]);
+
+
+    _______________________
+    _______________________
+
+    BOB
+
+    display_question(bob,[1,1,1],true);
+
+
+
+	display_question(bob,[2,1,3],true);
+	display_question(bob,[0,4,5]);
+	display_question(bob,[4,5,0]);
+	display_question(bob,[4,0,5]);
+	display_question(bob,[4,2,3]);
+	display_question(bob,[10,2,5]);
+
+___________________________
+___________________________
+
+    CALCUL
+
+    display_question(calcul,[0]);
+
+
+	display_question(calcul,[1]);
+
+
+	display_question(calcul,[2]);
+    
+	display_question(calcul,[3]);
+
+	display_question(calcul,[4]);
+
+	display_question(calcul,[6]);
+
+
+    ___________________________
+    ___________________________
+
+    PYTHON
+
+    display_question(python,[0]);
+	display_question(python,[1]);
+     On appelle la fonction erogahtyp, dans laquelle on déclare la variable 
+    a , qui vaut 1. 
+    On déclare la variable monResultat. 
+        On ouvre une boucle if  
+
+	display_question(python,[2]);
+	display_question(python,[3]);
+	display_question(python,[4]);
+	display_question(python,[6]);
+
+
+
+_______________________
+
+___________________________
+
+
+EROGAHTYP 
+
+
+	display_question(erogahtyp,[1]);
+    On appelle la fonction erogahtyp, dans laquelle on déclare la variable 
+    a , qui vaut 1. 
+    on déclare dans cette fonction al variable x. 
+        On ouvre la boucle if, avec pour condition que le modulo de la variable 
+        a par 2 soit égal à 0. 
+        Si la condition est remplie, 
+                On attribue à la variable x la valeur a(1)%2 ; 
+        a%2 vaut ici 1. La condition a(1)%2==0 n'est pas remplie. 
+
+        Donc la condition else s'applique ici : 
+            est attribué à x la valeur de 3*a(1)+1 ; 
+
+            Donc la fonction retourne la valeur de x = 4. 
+
+
+
+
+
+	display_question(erogahtyp,[2]);
+	display_question(erogahtyp,[3]);
+	display_question(erogahtyp,[4]);
+	display_question(erogahtyp,[5]);
+	display_question(erogahtyp,[6]);
+	document.write("<br/>");
+	display_question(erogahtyp,[7]);
+	display_question(erogahtyp,[8]);
+	display_question(erogahtyp,[9]);
+	display_question(erogahtyp,[10]);
+	display_question(erogahtyp,[11]);
+	display_question(erogahtyp,[12]);
+</script>
+</div>
+<div class="qcm" style="border-color:yellow">
+<script>
+	display_question(pythagore,[1,1]);
+	display_question(pythagore,[1,3]);
+	display_question(pythagore,[1,50]);
+	display_question(pythagore,[9,4]);
+	display_question(pythagore,[21,4]);
+	display_question(pythagore,[100,5]);
+	display_question(pythagore,[1,1234]);
+</script>
+</div>
+<div class="qcm" style="border-color:yellow">
+<script>
+	display_question(aceeilnrtt,[1]);
+	display_question(aceeilnrtt,[4]);
+	display_question(aceeilnrtt,[8]);
+	display_question(aceeilnrtt,[10]);
+	display_question(aceeilnrtt,[80]);
+	display_question(aceeilnrtt,[128]);
+	display_question(aceeilnrtt,[16]);
+</script>
+</div>
+<hr>
+<div class="qcm" style="border-color:green">
+<script>
+	display_question(micmath,[1,2]);
+	display_question(micmath,[2,2]);
+	display_question(micmath,[3,2]);
+	display_question(micmath,[4,2]);
+	display_question(micmath,[256,2]);
+	display_question(micmath,[500,2]);
+</script>
+</div>
+<div class="qcm" style="border-color:green">
+<script>
+	display_question(micmath,[1,5]);
+	display_question(micmath,[4,5]);
+	display_question(micmath,[5,5]);
+	display_question(micmath,[20,5]);
+	display_question(micmath,[25,5]);
+	display_question(micmath,[500,5]);
+</script>
+</div>
+<div class="qcm" style="border-color:green">
+<script>
+	display_question(stylo,[1,1]);
+	display_question(stylo,[1,10]);
+	display_question(stylo,[2,2]);
+	display_question(stylo,[2,10]);
+	display_question(stylo,[5,3]);
+	display_question(stylo,[10,4]);
+</script>
+</div>
+<div class="qcm" style="border-color:green">
+<script>
+	display_question(crayon,[1,1]);
+	display_question(crayon,[1,10]);
+	display_question(crayon,[2,2]);
+	display_question(crayon,[2,10]);
+	display_question(crayon,[5,3]);
+	display_question(crayon,[10,4]);
+</script>
+</div>
+<div class="qcm" style="border-color:green">
+<script>
+	display_question(minecraft,[0]);
+	display_question(minecraft,[1]);
+	display_question(minecraft,[2]);
+	display_question(minecraft,[3]);
+	display_question(minecraft,[4]);
+	display_question(minecraft,[10]);
+</script>
+</div>
+<div class="qcm" style="border-color:green">
+<script>
+	display_question(nenio,[0]);
+	display_question(nenio,[1]);
+	display_question(nenio,[2]);
+	display_question(nenio,[5]);
+	display_question(nenio,[10]);
+	display_question(nenio,[123321]);
+</script>
+</div>
+<hr>
+<div class="qcm" style="border-color:blue">
+<script>
+	display_question(carapuceSamourai,[0]);
+	display_question(carapuceSamourai,[1]);
+	display_question(carapuceSamourai,[2]);
+	display_question(carapuceSamourai,[3]);
+	display_question(carapuceSamourai,[5]);
+	display_question(carapuceSamourai,[456789]);
+</script>
+</div>
+<div class="qcm" style="border-color:blue">
+<script>
+	display_question(bouteilleDEau,[0]);
+	display_question(bouteilleDEau,[1]);
+	display_question(bouteilleDEau,[2]);
+	display_question(bouteilleDEau,[-50]);
+	display_question(bouteilleDEau,[20]);
+	display_question(bouteilleDEau,[-12396]);
+</script>
+</div>
+<div class="qcm" style="border-color:blue">
+<script>
+	display_question(spiderman,[0]);
+	display_question(spiderman,[1]);
+	display_question(spiderman,[2]);
+	display_question(spiderman,[50]);
+	display_question(spiderman,[20]);
+	display_question(spiderman,[12396]);
+</script>
+</div>
+<hr>
+<div class="qcm" style="border-color:#8A2BE2">
+<script>
+	display_question(az,[0]);
+	display_question(az,[1]);
+	display_question(az,[2]);
+	display_question(az,[20]);
+	display_question(az,[50]);
+	display_question(az,[666]);
+</script>
+</div>
+<div class="qcm" style="border-color:#8A2BE2">
+<script>
+	display_question(er,[0]);
+	display_question(er,[1]);
+	display_question(er,[2]);
+	display_question(er,[3]);
+	display_question(er,[4]);
+	display_question(er,[5]);
+</script>
+</div>
+<div class="qcm" style="border-color:#8A2BE2">
+<script>
+	display_question(ty,[0]);
+	display_question(ty,[1]);
+	display_question(ty,[2]);
+	display_question(ty,[20]);
+	display_question(ty,[50]);
+	display_question(ty,[666]);
+</script>
+</div>
+<div class="qcm" style="border-color:#8A2BE2">
+<script>
+	display_question(ui,[0]);
+	display_question(ui,[1]);
+	display_question(ui,[2]);
+	display_question(ui,[20]);
+	display_question(ui,[50]);
+	display_question(ui,[100]);
+</script>
+</div>
+</div>
+<div class="qcm" style="border-color:#8A2BE2">
+<script>
+	display_question(op,[0]);
+	display_question(op,[1]);
+	display_question(op,[2]);
+	display_question(op,[5]);
+	display_question(op,[10]);
+	display_question(op,[100]);
+</script>
+</div>
+<div class="qcm" style="border-color:#8A2BE2">
+<script>
+	display_question(qs,[1]);
+	display_question(qs,[2]);
+	display_question(qs,[3]);
+	display_question(qs,[14]);
+	display_question(qs,[100]);
+	display_question(qs,[1000]);
+</script>
+</div>
+<div class="qcm" style="border-color:#8A2BE2">
+<script>
+	display_question(df,[1,1]);
+	display_question(df,[2,4]);
+	display_question(df,[3,1]);
+	display_question(df,[14,3]);
+	display_question(df,[100,104]);
+	display_question(df,[500,101]);
+</script>
+</div>
+<hr>
+<div class="qcm" style="border-color:#FF00FF">
+<script>
+	display_question(gh,[1,1]);
+	display_question(gh,[1,2]);
+	display_question(gh,[1,3]);
+	display_question(gh,[2,6]);
+	display_question(gh,[3,7]);
+	display_question(gh,[123,456]);
+</script>
+</div>
+<div class="qcm" style="border-color:#FF00FF">
+<script>
+	display_question(jk,[1,1]);
+	display_question(jk,[1,2]);
+	display_question(jk,[1,3]);
+	display_question(jk,[3,6]);
+	display_question(jk,[19,7]);
+	display_question(jk,[123,456]);
+</script>
+</div>
+<div class="qcm" style="border-color:#FF00FF">
+<script>
+	display_question(lm,[1,1]);
+	display_question(lm,[1,2]);
+	display_question(lm,[1,3]);
+	display_question(lm,[2,6]);
+	display_question(lm,[3,7]);
+	display_question(lm,[123,456]);
+</script>
+</div>
+<div class="qcm" style="border-color:#FF00FF">
+<script>
+	display_question(wx,[1,0]);
+	display_question(wx,[1,1]);
+	display_question(wx,[1,3]);
+	display_question(wx,[7,1]);
+	display_question(wx,[10,3]);
+	display_question(wx,[1235,4]);
+</script>
+</div>
+<div class="qcm" style="border-color:#FF00FF">
+<script>
+	display_question(cv,[1,1]);
+	display_question(cv,[2,1]);
+	display_question(cv,[3,1]);
+	display_question(cv,[15,1]);
+	display_question(cv,[7,2]);
+	display_question(cv,[123456,4]);
+</script>
+</div>
+</body>
+</html>

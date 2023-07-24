@@ -1,0 +1,198 @@
+API KEY>>
+>> openweathermap: 
+https://home.openweathermap.org/api_keys
+ f8f4725b6bf120ffda3d73e51b869f32
+
+>> betaseries
+https://www.betaseries.com/compte/api/7e358fd2b4b6
+
+CLÉ API 7E358FD2B4B6
+Clé API : 7e358fd2b4b6
+→ https://api.betaseries.com/shows/random?key=7e358fd2b4b6
+Clé secrète (pour OAuth 2.0) : 84da4ce9221b5f5908e4419ce84566c9
+
+Complétez ou indiquez les informations concernant votre clé API.
+ La description est à titre informatif. 
+ Le nom apparaît sur le formulaire d'identification 
+ si vous utilisez la méthode OAuth (dans ce cas, vous devrez spécifier 
+ une URL de callback)
+
+
+---------------------
+
+
+ * DES URLS INTERESSANTES>>
+ * 
+ * Nicolas — Aujourd’hui à 10:00
+https://api.openweathermap.org/data/2.5/weather?appid=%22cl%C3%A9 api"&q="ville"&units"metrics"
+[10:01]
+https://api.openweathermap.org/data/2.5/weather?appid=cl%C3%A9api&q=%22ville%22&units=metrics
+
+Yasmine — Aujourd’hui à 10:21
+https://api.betaseries.com/search/movies?text=avatar&key=
+NOUVEAU
+
+Nicolas — Aujourd’hui à 11:14
+Recherche par film: https://api.betaseries.com/movies/movie?id=266&key=
+[11:14]
+Les plus populaires: https://api.betaseries.com/movies/discover?type=popular&key=
+[11:15]
+Recherche toutes catégories confondues: https://api.betaseries.com/search/all?query=avatar&key=
+
+_________________________________
+
+
+
+
+!!!!!!!!! cf. ternaire => ? : function
+
+// FOR EACH
+// permet d'itérer un tableau comme for of.
+/**
+ */
+
+let lists = ["Fromage", "Thon", "Mayo"];
+
+lists.forEach (function(produit) {
+    console.log(produit);
+})
+
+________________________
+
+
+
+// METHODE MAP
+
+
+let listNb = [2,6,7,3];
+let listFoisDeux = listNb.map(nb => nb*2);
+console.log(listFoisDeux);
+
+________________________________
+
+
+
+// METHODE FILTER
+let prenom = ["Laura", "Luc", "Jean"];
+let prenomCourt = prenom.filter(pren => pren.length <= 3); // fonction fléchée
+console.log(prenomCourt);
+
+// EG>>
+
+const nbr = [1,2,3,4,5,6,7,8];
+
+const pair = nbr.filter(function(nb) {
+    return nb % 2 === 0;
+});
+
+console.log(pair);
+
+let sum = 0;
+for (let i = 0 ; i<= 10 ; i++) {
+    if(i%2 === 0) {
+        console.log(i);
+        sum += 1;
+    }
+}
+
+console.log("La somme des nombres pairs est: " + sum);
+
+
+
+
+
+____________________________
+
+
+Accéder à un élément à partir de sa balise : 
+.querySelector("h1") et .querySelectorAll("p")
+
+_______
+
+LES EVENEMENTS
+
+In html : 
+    PAR LES ATTRIBUTS
+    <button > Clique sur moiii ♥ </button>
+        ↓         ↓
+    <button onclick="console.log> Clique sur moiii ♥ </button>
+
+    !! Il y a sur le web des listes d'événement
+
+    <button onmouseover ="console.log> Clique sur moiii ♥ </button>
+    Trsè pratique en ReactJS 
+
+    Par ADDEVENTLISTENER? 
+
+    __________________
+
+    TRY/CATCH
+
+Throw, and Try...Catch...Finally
+
+The try statement defines a code block to run (to try).
+
+The catch statement defines a code block to handle any error.
+
+The finally statement defines a code block to run regardless of the result.
+
+The throw statement defines a custom error.
+w>>https://www.w3schools.com/js/js_errors.asp
+    ________________________
+
+
+    LES API 
+    Application Programming interface. 
+
+
+
+    / API fetch 
+
+fetch("http://universities.hipolabs.com/search?name=Middle&country = Turkey") // fetch qui permet de faire la requête à la cible
+.then(response => {// premier then qui permet de formater les données en JSON
+    console.log(response);
+    return response.json();
+})
+.then(data => { // deuxième then qui de récupérer les données.
+    console.log(data);
+    console.log(`Mes données : ${JSON.stringify(data)}`);
+    return data;
+})
+.catch(error => console.error(error)) // catch qui capture les erreurs potentiel de la requête
+
+
+RECAP>>
+fetch permet de faire la reqt à la cible
+cible = url ; 
+.then permet de traduire /formater les données en json /tab associatif.
+deuxième.then permet de récup les données
+Et .catch capture les erreurs potentielles de la reqt.
+
+
+
+----------------------
+
+
+If you want to generate a new console.log("Vous avez cliqué") line every time you click on a button, you can modify the existing code by appending a timestamp or a unique identifier to the log message. This way, each click event will produce a distinct log entry.
+
+Here's an updated version of the code that adds a timestamp to the log message:
+
+javascript
+Copy code
+let btns = document.querySelectorAll('button');
+
+btns.forEach(function(btn) {
+  btn.addEventListener('click', function(event) {
+    event.preventDefault();
+    console.log('Vous avez cliqué à', new Date().toLocaleTimeString());
+  });
+});
+In this updated code, the new Date().toLocaleTimeString() method is used to generate a timestamp indicating the current time. This timestamp is appended to the log message, so each time you click a button, a new log entry will be created with the current time.
+
+Now, when you click on a button, you will see a log message similar to the following in the console:
+
+Copy code
+Vous avez cliqué à 10:30:45 AM
+Vous avez cliqué à 10:30:47 AM
+Vous avez cliqué à 10:30:50 AM
+Each log entry will have a different timestamp based on when the button was clicked.

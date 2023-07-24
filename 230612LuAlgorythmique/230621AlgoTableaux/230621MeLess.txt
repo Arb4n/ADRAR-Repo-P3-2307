@@ -1,0 +1,274 @@
+QA
+
+
+
+
+Variable : 
+
+Le fait de se servir d'une variable est 
+généralement appelé "utilisation" ou "accès" 
+à une variable. Lorsque vous utilisez une variable 
+dans votre code, vous l'appelez par son nom 
+afin d'accéder à sa valeur et de l'utiliser 
+dans des opérations, des calculs ou d'autres 
+manipulations. L'utilisation d'une variable 
+peut inclure la lecture de sa valeur, 
+la modification de sa valeur ou l'utilisation 
+de sa valeur dans des expressions 
+ou des instructions.
+
+
+
+
+
+
+Fonction : 
+
+
+boucle : permet de répéter. 
+Normalement, une ligne de code , 
+ça se lit de haut en bas et ? 
+Les deux types de boucle en js : 
+boucle for et boucle while. 
+for : on définit les params de départ 
+et d'arrivée et on sait ce qui va se passer,
+et while = on connaît la condition p
+our continuer, mais on ne sait pas combien de fois. 
+Comment l'écrire ? : 
+for (let etc. 
+while 
+
+
+If : 
+vérifie si une condition est vraie 
+et else s'exécute si if est faux. 
+Précision : si jamais le else est vide, 
+on peut le suppr. 
+Si on n'a pas de else, on peut l'enlever. 
+
+Un autre opérateur : 
+modulo. 
+C'est un opérateur qui permet de calculer une opération. 
+
+
+
+
+>> LESSON <<
+
+
+LES TABLEAUX 
+
+Qu'est-ce qu'on peut faire avec 
+un tableau en js? 
+Comment ça s'utilise ? 
+
+On va y stocker des valeurs. 
+Une case d'un tableau = simil à une variable. 
+JUste, elle n'a pas son id. 
+On y accède d'une manière partic. 
+
+!!! accolades = code. 
+!!! crochet = tableau ! 
+
+On utilise des crochets, donc, pour 
+signifier la création d'un tableau. 
+
+
+Les cases sont numérotées. Elles ont un ordre. 
+
+Première valeur = in case n°0
+En informatique, on compte à partir 
+de 0 pour des raisons techniques. 
+
+On essaie d'accéder aux cases du tableau, mais 
+de manière individuelle. 
+
+<
+<
+<
+ On peut ainsi accéder aux cases. 
+ On peut y accéder en lecture. 
+ Cela se comporte comme un variable classique. 
+ 
+ c>> ages.push(77); <<c : on entre une info 
+ 
+ c>> ages.pop(); <<c : on suppr une info. 
+ Par contre, cette fonction va nous retourner 
+ une valeur. 
+	Et qu'est-ce que ça vaut ? 
+	ça vaut l'action supprimée . 
+ 
+	Ainsi, si on met console.log(ages.pop()); 
+	On va retrouver 19 dans la console. 
+	ages.pop une deuxième fois a supprimé une deuxième 
+	valeur. 
+	
+Taille du tableau : 
+	c>> ages.length <<c
+!!! pas de parenthèses, car pas une fonction, 
+variable ! 
+	
+ 
+ 
+ ___________
+ 
+ 
+ arr = nom assez générique pour un tableau 
+ arr= array. 
+ 
+ 
+ let arr = [ , , , , , ];
+ <
+< (5) = taille tu tableau dans console 
+ <
+ 
+ On peut voir ensuite tout ce qui 
+ est mentionné dans chaque case, et la longueur
+ du tableau. 
+ 
+ !!! quand on fait console.log d'un tableau, 
+ on n'a pas forcément une transcription 
+ exacte : en haut, version au moment où on 
+ fait console.log; 
+ en bas, dans la console,
+ l'opé au moment où on clique sur la flèche. 
+ 
+ 
+ 
+ 
+ 
+ .?. 
+ 
+ 
+ 
+ 
+ Les tableaux
+// Création d'un tableau (que je stocke dans une variable)
+let arr = [14, 25, 36, -1, 12.3456];
+
+console.log(arr);
+
+// Accéder à une case du tableau ; il me faut son numéro
+
+// Par exemple, afficher dans la console le contenu de la case numéro 2 du tableau arr
+console.log(arr[2]);
+// Autre exemple, affecter 789 à la case numéro 4 du tableau arr.
+arr[4] = 789;
+
+console.log(arr);
+
+// Ajouter une nouvelle case à la fin
+arr.push(-3);
+console.log(arr);
+
+// Supprimer la dernière case du tableau
+arr.pop();
+console.log(arr);
+// La fonction retourne une valeur : celle qui était dans la case qui vient d'être supprimée.
+console.log(arr.pop());
+let save = arr.pop();
+console.log("Je viens de supprimer la dernière case, elle contenait", save);
+console.log(arr);
+
+// Taille du tableau (nombre de cases)
+arr.length
+// Pour l'afficher dans la console
+console.log("Le tableau contient", arr.length, "cases.");
+// Pour la stocker dans une variable
+let size = arr.length;
+console.log("La variable size contient", size);
+
+Envoyer un message dans #🧮-algo
+
+
+<
+<
+ 
+Qu'est-ce que ça fait si on l'utilise ? 
+cela vient modif le tableau pour suppr 
+la der case. 
+Et le 23 qu'il y a, elle le récup :
+suppression, mais le donne en sortie de la fonction .
+
+Et quand on écrit console.log (arr.pop()); ,
+on voit qu'on a un résultat : tout cette 
+partie vaut 23 
+!!! c'est pourquoi = important
+séparer pt de vue inter et exter. 
+ 
+<
+<
+ 
+On est obligé d'appeler variable par variable ? 
+Nop. 
+On peut se servir d'un tableau lala ♫
+
+Un part un ? Deuxième méthode. 
+
+Mais on peut aussi appeler une boucle ! 
+3ème. 
+
+boucle for. 
+chaque numéro/valeur correspondra 
+à chaque case du tableau! 
+
+<
+<
+
+
+Et là, on peut faire varier 
+le nombre de données par la taille du tableau. 
+automatiser des variables qui sont soeurs. 
+>> ages.length 
+
+
+ 
+<
+<
+
+ex8 
+for (let i = 0 ; i < tab1.length ; i++ { 
+!!! bon numéro, pour éviter les erreurs !!! 
+
+<
+<
+<
+<
+
+Correc exs 9 =<
+
+exo 13
+.reduce : operation sur chaque case du tab1charcode = transpose
+un nombre en charactere
+cf. table ASCI
+
+on peut meme voir a droite le binaire qui correspond
+
+
+
+
+
+>>> TABLEAUX2 <<<
+
+<
+<
+
+	N!!! Rien qu'en voyant le nom de la fonction, 
+on doit savoir ce que fait la fonction  : 'f' c'est pourri.
+Elle donne le dernier élément d'un tableau : 
+* displayLast*   *.*
+
+Alors, sans fonction, déjà : < 
+
+<
+Comment on enregistre un tableau, une valeur ? !!! VARIABLE !!!!!
+
+
+<
+<
+
+
+COding up : s'organise à Poitiers 
+Tous les ans. 
+But: réunir des jeunes, des lycéens etc. pour 
+résoudre quelques exercices. 

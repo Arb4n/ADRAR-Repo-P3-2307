@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travalizer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <title> TP3 - Travalizer </title>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row">
+            <fieldset>
+                <!-- First Half -->
+                <div class="col col-3 p-2">
+                    <div>
+                        <header>
+                            <div class="d-flex  mt-auto">
+                                <!-- <logo> <img class="mainLogo"
+                                    src="https://www.creads.com/wp-content/uploads/2021/05/transavia-identity-logo-home1-1.jpg"> -->
+                                <logo> <img class="mainLogo" src="logos\travalizer_mainLogo.jpg">
+                                </logo>
+
+                                <h1 class="mainTitle">Travalizer</h1>
+                            </div>
+                        </header>
+                        <legend class="mainLegend">Artificial intelligence giving you travel recommandations</legend>
+                        <span>Welcome Back, Please login to your account</span>
+                    </div>
+
+                    <!-- Log IN  -->
+                    <div class="form-group was-validated">
+                        <!-- email input -->
+                        <div>
+                            <label for="userName">Email</label>
+
+                            <div class="input-group">
+
+
+                                <div class="input-group-prepend"><span class="input-group-text"
+                                        aria-label="arobase">@</span>
+                                </div>
+                                <input type="email" class="form-control" name="userName" id="userName" autofocus
+                                    required minlength="6" maxlength="50">
+                            </div>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form">
+                            <label for="password">Password</label>
+                            <div>
+                                <input type="password" class="form-control" name="password" id="password" required
+                                    minlength="6">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="c1" name="checkbox1" id="checkbox1">
+                            <span> Remember me</span>
+                            <span> <a href="forgotPasword.html">Forgot password ? </a></span>
+                        </div>
+                        <!-- <div>
+                <label for="password">Password</label>
+                <div>
+                </div> <input type="password" name="password" id="password" placeholder="Here : password">
+            </div> -->
+
+
+                    </div>
+                    <!-- Buttons -->
+                    <div class="form-group d-flex justify-content-between mt-3 mb-3">
+
+                        <button class="btn btn-success w-50">Login</button>
+
+                        <button class="btn btn-close-white w-50">Sign Up</button>
+
+
+
+                    </div>
+                    <!-- Buttons/END -->
+                    <!-- Login /END -->
+
+                    <footer>
+                        <span class="form-group d-flex justify-content-between mt-2">
+                            <p>Or, login with : </p>
+                            <p><a href="">Facebook</a></p>
+                            <p><a href="">Linked in</a></p>
+                            <p><a href="">Gogol</a></p>
+                        </span>
+                    </footer>
+                </div>
+                <!-- first half /END -->
+                <div class="form-group col col-6">
+
+                    <img src="bg\travalizer_Bg.jpg" alt="">
+                </div>
+
+
+            </fieldset>
+        </div>
+    </div>
+
+</body>
+
+</html>

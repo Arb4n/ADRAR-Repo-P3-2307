@@ -1,0 +1,8 @@
+* {
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}

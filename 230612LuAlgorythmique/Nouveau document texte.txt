@@ -1,0 +1,3 @@
+Voir une table de vérité, logique booléenne. 
+
+cf. lois de deMorgan

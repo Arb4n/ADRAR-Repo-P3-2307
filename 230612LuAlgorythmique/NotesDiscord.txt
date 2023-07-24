@@ -1,0 +1,94 @@
+Pierre — Aujourd’hui à 10:30
+Si jamais t'as une question en particulier, demande ^^
+NOUVEAU
+
+Laura V — Aujourd’hui à 12:07
+j'ai un souci pour générer un point aléatoire, ma fonction est appelée en boucle, comment lui dire de ne jouer la fonction qu'une seule fois?
+
+Pierre — Aujourd’hui à 12:24
+Ce que tu écris dans le draw, c'est ce qu'il faut faire à chaque dessin (à chaque frame) de l'animation.
+Si tu ne veux faire quelque chose qu'une seule fois, au démarrage du dessin -> dans le setup (modifié)
+[12:25]
+Si tu veux faire quelque chose au clic de la souris -> dans le mouseClicked
+[12:26]
+Chaque fonction "de base" de p5 permet de dire "ça c'est le code qu'il faut faire quand ..."
+
+setup -> quand on démarre le dessin
+draw -> quand on vient de finir l'image précédente (la frame précédente)
+mouseClicked-> quand on clique dans l'image
+
+Laura V — Aujourd’hui à 12:30
+ok, j'ai essayé de mettre ma fonction dans setup et ça ne fonctionne pas, j'ai essayé de l'écrire dans draw et de l'appeler dans setup et ça ne fonctionne pas non plus...
+
+Pierre — Aujourd’hui à 12:31
+Si tu veux créer une nouvelle fonction, il faut le faire en dehors de tout, à la suite de setup, draw et tout ça.
+Et c'est l'appel de la fonction qu'il va falloir faire dans le setup
+[12:33]
+Quand tu crées une fonction, c'est comme si tu construisais un petit robot pour faire des choses.
+Ce robot, tu n'as pas besoin de le construire pour chaque frame.
+Par contre, tu peux vouloir l'activer pour chaque frame. Auquel cas, on appelles la fonction dans le draw.
+
+Laura V — Aujourd’hui à 12:35
+ça y est ça fonctionne, je n',avais pas cherché à comprendre le fonctionnement de setup et draw...
+
+1
+
+Pierre — Aujourd’hui à 12:36
+Exemple :
+function drawFourPoints() {
+    point(100, 100);
+    point(300, 100);
+    point(100, 300);
+    point(300, 300);
+}
+
+function setup() {
+    createCanvas(400, 400);
+    // Je prends un gros crayon rouge une fois au début de l'animation
+    strokeWeight(5);
+    stroke(255, 0, 0);
+}
+
+function draw() {
+    // Je mets du noir partout
+    background(0);
+    
+    // Je fais une ligne de la souris jusqu'au coin en bas à droite
+    line(mouseX, mouseY, 400, 400);
+
+    // Je dessine les 4 points
+    drawFourPoints();
+}
+
+Laura V — Aujourd’hui à 12:40
+oui mais là ça dessine 4 points en boucle, au mêmes endroits non?
+
+Pierre
+Exemple : function drawFourPoints() {     point(100, 100);     point(300, 100);     point(100, 300);     point(300, 300); }  function setup() {     createCanvas(400, 400);     // Je prends un gros crayon rouge une fois au début de l'animation     strokeWeight(5);     stroke(255, 0, 0); }  function draw() {     // Je mets du noir partout     background(0);          // Je fais une ligne de la souris jusqu'au coin en bas à droite     line(mouseX, mouseY, 400, 400);      // Je dessine les 4 points     drawFourPoints(); }
+
+Pierre — Aujourd’hui à 12:40
+On peut s'amuser à changer la couleur du fond par une couleur un peu transparente pour voir ce que ça donne :
+background(0, 128, 255, 30);
+
+@Laura V
+oui mais là ça dessine 4 points en boucle, au mêmes endroits non?
+
+Pierre — Aujourd’hui à 12:40
+Oui, c'était juste un exemple pour utiliser une fonction (que j'ai commencé à écrire avant que tu dises avoir résolu ton problème ^^)
+
+Laura V — Aujourd’hui à 12:41
+ok 
+[12:41]
+draw va servir pour l'animation de la balle par contre
+
+1
+[12:42]
+merci bcp pour les infos en tout cas
+
+Yasmine — Aujourd’hui à 13:34
+respect pour ceux qui sont déjà à p5 x)
+
+Pierre — Aujourd’hui à 13:43
+Je vous propose une autre série d'exercice aussi : https://pydefis.callicode.fr/
+
+C'est un site qui donne plein de petits exercices. On n'a pas encore tous les outils pour répondre à tout, mais ça vaut quand même le coup de regarder !

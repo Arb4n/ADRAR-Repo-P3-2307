@@ -1,0 +1,125 @@
+TABLEAU ASSOCIATIF
+Un tableau associatif est une structure de données qui permet d'associer des valeurs à des clés. Contrairement aux tableaux numérotés classiques, où les indices sont des entiers, les tableaux associatifs utilisent des clés personnalisées pour accéder aux valeurs correspondantes.
+
+Dans un tableau associatif, chaque élément est constitué d'une paire clé-valeur, où la clé est une référence unique et la valeur est la donnée associée à cette clé. Les clés peuvent être de différents types, tels que des chaînes de caractères, des nombres, des objets, etc.
+
+L'avantage d'utiliser un tableau associatif est qu'il permet de rechercher, ajouter, supprimer ou modifier des éléments en utilisant des clés significatives, ce qui facilite la manipulation des données et la recherche rapide des valeurs correspondantes. Il permet également de représenter des ensembles de données qui ne nécessitent pas d'ordre spécifique, contrairement aux tableaux numérotés.
+
+Dans certains langages de programmation, les tableaux associatifs sont également appelés dictionnaires, tables de hachage ou maps. Ils sont largement utilisés dans le développement logiciel pour représenter des enregistrements, des configurations, des listes de paramètres, des tables de traduction, etc.
+
+En résumé, un tableau associatif est une structure de données qui permet d'associer des valeurs à des clés personnalisées, offrant ainsi une flexibilité et une efficacité pour accéder, manipuler et organiser des données.
+
+
+_________________
+
+
+LES API 
+
+Application Programming interface. 
+C'est un ensemble de classes et de méthodes qui permettent de communiquer
+avec d'autres produits et services.
+Annuaire téléphonique: permet aux humains d'échanger des infos :
+API permet de communiquer avec un ordi pour récupérer des infos
+au travers d'une demande. 
+
+____________________
+
+
+Le format JSON>>
+Un format de texte / données qui se structure en tab 
+associatif. 
+On peut avoir différents types d'objets,
+des données, des data etc. 
+
+_________________
+
+
+RECAP>>
+fetch permet de faire la reqt à la cible
+cible = url ; 
+.then permet de traduire /formater les données en json /tab associatif.
+deuxième.then permet de récup les données
+Et .catch capture les erreurs potentielles de la reqt.
+
+A callback function, also known as a callback, is a function that is passed as an argument to another function and is invoked or called within that function. The purpose of a callback function is to specify what action should be taken after a particular operation or task is completed.
+
+In JavaScript, functions are first-class objects, which means they can be assigned to variables, passed as arguments to other functions, and returned as values from other functions. This allows the use of callback functions to achieve asynchronous and event-driven programming.
+
+Here's a simple example that demonstrates the use of a callback function:
+
+javascript
+Copy code
+function fetchData(callback) {
+  // Simulate fetching data asynchronously
+  setTimeout(function() {
+    const data = 'Some data';
+    callback(data); // Invoke the callback function with the fetched data
+  }, 2000);
+}
+
+function processData(data) {
+  console.log('Processing data:', data);
+}
+
+fetchData(processData); // Pass the processData function as a callback
+In this example, fetchData is a function that simulates fetching data asynchronously, using a setTimeout function. It takes a callback function as an argument. After the data is fetched, the callback function is invoked with the fetched data as its argument.
+
+The processData function is another function defined separately. It is passed as the callback to the fetchData function. Once the data is fetched, the processData function is called with the fetched data as its argument. In this case, it simply logs the data to the console.
+
+Using callback functions allows you to control the flow of execution and handle the results of asynchronous operations in a flexible manner.
+
+
+
+
+
+
+The forEach() method is a built-in JavaScript method available on arrays and some array-like objects, such as NodeLists. It allows you to iterate over each element in the array or NodeList and perform a specified action or execute a callback function for each element.
+
+The basic syntax of the forEach() method is as follows:
+
+javascript
+Copy code
+arrayOrNodeList.forEach(function(element, index, array) {
+  // Perform actions on each element
+});
+Here's a breakdown of the parameters:
+
+element: The current element being processed in the array or NodeList.
+index (optional): The index of the current element being processed.
+array (optional): The array or NodeList that the forEach() method was called upon.
+Within the callback function, you can write the logic to perform actions on each element. The forEach() method will iterate through the entire array or NodeList and execute the provided callback function for each element.
+
+Here's an example of using forEach() with a NodeList:
+
+javascript
+Copy code
+let nodeList = document.querySelectorAll('div'); // Select all div elements
+
+nodeList.forEach(function(element, index) {
+  console.log(element.textContent); // Output the text content of each div
+});
+In this example, querySelectorAll('div') selects all <div> elements on the page and returns a NodeList. The forEach() method is then used to iterate over each element in the NodeList and log its text content to the console.
+
+Note that the forEach() method does not return a new array. Its purpose is to iterate over the elements and perform an action on each element. If you need to transform the elements or create a new array based on the existing elements, you may consider using other array methods such as map(), filter(), or reduce().
+
+
+
+A NodeList is a collection of DOM nodes, typically returned by DOM methods like querySelectorAll() or childNodes. It represents a list of nodes that can be accessed and manipulated using various methods and properties.
+
+A NodeList is similar to an array in that it has a length property and can be iterated over. However, it is not an actual array and does not have all the methods available to arrays. Some common operations you can perform on a NodeList include accessing individual nodes by index, iterating over the nodes using loops or methods like forEach(), and converting it to an array using Array.from() or the spread operator ([...nodeList]) if necessary.
+
+Here's an example of how you can access and iterate over a NodeList:
+
+javascript
+Copy code
+let elements = document.querySelectorAll('div'); // Select all div elements
+
+console.log(elements.length); // Output the number of div elements
+
+elements.forEach(function(element) {
+  console.log(element.textContent); // Output the text content of each div
+});
+
+// Access individual nodes by index
+console.log(elements[0]); // Access the first div element
+In the example above, querySelectorAll('div') selects all <div> elements on the page and returns a NodeList. You can access the length property to determine the number of elements in the NodeList. Using forEach(), you can iterate over each element and perform actions on them. Additionally, you can access individual nodes within the NodeList using index notation (elements[0] to access the first element, for example).

@@ -1,0 +1,113 @@
+Exos bonus en p5
+ (modifié)
+
+Pierre — Aujourd’hui à 16:15
+ Déplacements au hasard 
+On considère 3 points, A, B et C. Un bonhomme part du point A, et se déplace en suivant cet algorithme :
+Choisir un des 3 points au hasard
+Se déplacer à mi-chemin vers le point choisi.
+
+Il faut ça sans s'arrêter.
+On cherche à dessiner ça.
+
+Par exemple, on pourrait avoir le dessin suivant :
+
+[16:15]
+ Dessin récursif 
+function setup() {
+    createCanvas(600,600);
+    background(0);
+    stroke(255,0,0);
+    //noFill();
+    fill(0,255,255,50);
+}
+
+function draw() {
+    background(0);
+    dessinRecursif(300,300,10);
+}
+
+function dessinRecursif(x, y, size) {
+    circle(x, y, size);
+    if(size > 10) {
+        dessinRecursif(x-size, y, size/2);
+        dessinRecursif(x+size, y, size/2);
+        dessinRecursif(x, y-size, size/2);
+        dessinRecursif(x, y+size, size/2);
+    }
+}
+
+// Sans tester le programme, essayer de deviner ce qu'il va dessiner.
+// Même question en modifiant la ligne 11 avec différentes valeurs :
+// - dessinRecursif(300,300,20);
+// - dessinRecursif(300,300,40);
+// - dessinRecursif(300,300,80);
+[16:16]
+Des histoires de rotation
+function setup() {
+    createCanvas(600,600);
+    noFill();
+    stroke(128,0,255);
+    strokeWeight(3);
+}
+let angle = 0;
+function draw() {
+    background(0);
+    /*
+    Essayer de modifier les arguments des fonctions tourneX et tourneY (version sans tableau) pour comprendre comment on peut s'en servir
+    */
+    /* // Version avec tableau
+    let coords = getCoords(width/2, height/2, 100, angle, 45);
+    let x = coords[0];
+    let y = coords[1];
+    */
+    // Version sans tableau
+    let x = tourneX(width/2,100,angle,45);
+    let y = tourneY(height/2,100,angle,45);
+  
+    strokeWeight(5);
+    point(x,y);
+    strokeWeight(1);
+    circle(300,300,200);
+    angle += 0.5;
+}
+
+function getCoords(xc, yc, rayon, angle, phase) {
+    let x = tourneX(xc, rayon, angle, phase);
+    let y = tourneY(yc, rayon, angle, phase);
+    return [x,y];
+}
+
+function tourneX(xc, rayon, angle, phase) {
+    return xc+rayon*Math.cos((angle+phase)*PI/180);
+}
+
+function tourneY(xc, rayon, angle, phase) {
+    return xc+rayon*Math.sin((angle+phase)*PI/180);
+}
+
+/* Sans se soucier des échelles :
+- Dessiner la Terre qui tourne autour du Soleil
+- Dessiner la Lune qui tourne autour de la Terre
+*/
+[16:16]
+Une fois qu'on a compris comment fonctionne la rotation, on peut essayer de l'utiliser pour dessiner un "système solaire" (ou une partie) :
+Le soleil au centre, 2 ou 3 planètes qui tournent autour du soleil, et des satellites qui tournent autour des planètes. Et pourquoi pas des mini-satellites qui tournent autour des satellites !
+Quelque chose dans ce goût là :
+
+[16:16]
+On peut faire une horloge, une fois qu'on a vu comment placer un point autour d'un cercle, en connaissant le centre, le rayon et l'angle.
+[16:17]
+On peut aussi faire les tables de multiplication !
+
+Il faut imaginer qu'il y a des points autour d'une horloge, et on va relier les points avec leur double.
+Par exemple, on relie  le 2 et le 4.
+On relie aussi le 17 et le 34 (et sur l'horloge du dessin, avec 20 nombres, 34 et 14 sont au même endroit modulo ?).
+
+[16:17]
+Si certains essayent de faire cet exo, pour aller plus loin, essayer ces paramètres :
+let planetes = [{"v_r": 0, "radius": 511.08913039571655, "phase": 0.5568974805450498}, {"v_r": 1, "radius": 153.4389732849392, "phase": 3.0903347890501904}, {"v_r": 2, "radius": 62.32270509644777, "phase": -2.800785047213162}];
+
+C'est une liste de planètes. Chacune a un "radius" (la distance par rapport à la planètes précédente), une vitesse de rotation "v_r" et une "phase" (angle au départ).
+
+En dessinant la trajectoire de la troisième planète, vous devriez avoir quelque chose comme ça :

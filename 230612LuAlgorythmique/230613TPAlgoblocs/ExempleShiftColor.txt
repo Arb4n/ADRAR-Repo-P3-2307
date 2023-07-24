@@ -1,0 +1,11 @@
+Exemple de shiftColor :
+setPos(50,300);
+faceRight();
+//changeColor(color.green);
+shiftColor(1/6);
+setLineWidth(10);
+
+for(let i = 0 ; i < 10 ; i++) {
+    forward(50);
+    shiftColor(0.1);
+}

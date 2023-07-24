@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TP2 Bootstrap - Cards </title>
+    <link href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+</head>
+
+<body class = "bg-dark">
+    <div class="row-align-items-center">
+        <nav class="navbar navbar-light bg-light navbar-expand-sm d-flex justify-content-between">
+            <ul class="text-white navbar-nav mr-auto ms-3">
+
+                <h2 class="navbar-brand">Bootstrap</h2>
+
+                <li class="nav-link"> Accueil </li>
+                <li class="nav-link"> Films </li>
+                <li class="nav-link"> Series </li>
+
+            </ul>
+        </nav>
+    </div>
+    
+    <div class = " text-white p-3 d-flex justify-content-center">
+      <h3 class="text-primary"> <span>Tendances du </span> <span class = "text-warning"> jour </span></h3>
+     </div>
+    <div class="d-flex justify-content-around text-light mt-0">
+      
+        <div class = "card w-25">
+          <div class = "card-body border border-1 border-light-subtle m-0 p-1 ">
+            <img class = "card-img-top" src = "films\La La Land.webp" style = "width: 100%">
+            <div> 
+              <h4>La La Land</h4>
+            </div>
+            <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt, 
+              doloribus quisquam dignissimos pariatur, quaerat id minus sequi! 
+              Ullam, eum et. </div>
+              <div class = "d-flex justify-content-end">
+                Prix : 5€
+              </div>
+              <div class = "d-flex justify-content-around p-4" >
+                <button class = "btn btn-primary">Louer / Acheter le film </button>
+              </div>
+          </div>
+        </div>
+        
+       
+        <div class = "card w-25">
+          <div class = "card-body border border-1 border-light-subtle m-0 p-1 ">
+            <img class = "card-img-top" src = "films\Joker.webp" style = "width: 100%">
+            <div> 
+              <h4>Joker</h4>
+            </div>
+            <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt, 
+              doloribus quisquam dignissimos pariatur, quaerat id minus sequi! 
+              Ullam, eum et. </div>
+              <div class = "d-flex justify-content-end">
+                Prix : 5€
+              </div>
+              <div class = "d-flex justify-content-around p-4" >
+                <button class = "btn btn-primary">Louer / Acheter le film </button>
+              </div>
+          </div>
+        </div>
+        
+       
+        <div class = "card w-25">
+          <div class = "card-body border border-1 border-light-subtle m-0 p-1 ">
+            <div >
+              <img class = "card-img-top " src = "films\Leon_reference.jpg" >
+            </div>
+            <div> 
+              <h4>LEON</h4>
+            </div>
+          <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt, 
+              doloribus quisquam dignissimos pariatur, quaerat id minus sequi! 
+              Ullam, eum et. </div>
+              <div class = "d-flex justify-content-end">
+                Prix : 5€
+              </div>
+          <div class = "d-flex justify-content-around p-4" >
+            <button class = "btn btn-primary">Louer / Acheter le film </button>
+          </div>
+          </div>
+        </div>
+        
+    </div>
+
+
+<!-- NB>> how to align content in cards ?? -->
+
+<!-- 
+  paddding : p-1
+  margin : m-1
+  width : style = "width: 25%"
+ -->
+
+
+</body>
+
+</html>

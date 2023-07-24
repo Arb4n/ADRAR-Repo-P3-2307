@@ -1,0 +1,41 @@
+
+
+
+
+Add a button avec une zone de texte
+
+1: une zone de texte → input type = text →     <input type="text" id="inputText">
+<button id="addButton">Ajouter</button>
+
+2: un button : un bouton avec une classe ajouter ou addButton
+
+3: cf. DOM.js : add eventlistener ? 
+
+
+CORREC>> 
+
+let tasks etc. // Un tableau de taches
+
+const addbtn etc. // ajouter boutonVérifier en 
+stockant dans nametask L.22 si qque chose a été saisi
+.hidden pour masquer le formulaire et ? 
+
+Fonction add task : 
+?
+filter pour chercher la tâche en question = filtrer 
+un tableau et donner un nouv tab. Evite 
+d'aller chercher un élément avec un pt pop. 
+
+Quand on clique sur un bouton modif, on génère un nouv 
+formulaire. 
+on cache alors le nom
+L54 event submit on récup la donnée et on 
+la stocke dans le bon index. L.62
+et alert pour dire si le champ est vide.
+
+Ensuite, section L.72 pour stocker tout.
+BOucle et aoppel à la fonct addtask.
+Et ensuite, appel à addbtn qui crée une task
+ et affiche le formulaire L.80
+
+ 

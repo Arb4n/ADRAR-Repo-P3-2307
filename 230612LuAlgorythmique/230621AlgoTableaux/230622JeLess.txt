@@ -1,0 +1,118 @@
+Variables 
+Boucles 
+if/ele
+fonctions
+
+modulo : une partie de la division euclidienne.
+...
+
+Un opérateur qui travaille avec des booléens : 
+permet de mélanger deux booléens. 
+
+.?.? albaaan
+xor; utilisé en crypto, par exemple. 
+
+tableaux : 
+	Assimilable à une variable. 
+	Un élément avec un index. 
+	.?.
+	push 
+	pop = a une fonction, fait une action, 
+	mais permet d'	afficher un résultat,
+	vaut qque chose. 
+	
+	
+	
+	<
+	<
+	<
+	<
+	
+	là, si tu le fais juste comme 
+	ça, tu auras du mal, sans méthode.
+	Comment faire pour trouver 
+	la plus petite ? 
+	Décompose : comment je fais manuellement? 
+	On lit chaque case une  à une . 
+	On garde à chaque fois la plus petite, en mémorisant 
+	chaque plus petite. 
+	Parcourir le tableau ? Boucle For
+	Chaque info est gardée ? > variable.
+	ET si on veut garder 
+	à chaque fois le minmum, 
+	il faudra la modifier ! Comment? 
+	cad de quelle manière? 
+	On veut garder le minimum ; 
+	cad qu'on va changer la variable 
+	uniquement si on trouve une valeur 
+	inférieur ; 
+	la CONDITION est donc simplement : 
+	SI on trouve une valeur inférieur, 
+	on change celle de la variable. 
+	SINON, on peut continuer à parcourir 
+	la boucle. R. 
+	PUIS, une fois que le tableau 
+	a été parcouru par notre boucle FOR,
+	le résultat de la variable peuit être renvoyé. 
+	DOOOOOOOOONE !!!!! BOOYAAA !!! 
+	
+	
+	
+	
+	___________
+	<
+	<
+	<
+	Tableaux- Exo Bonus 1 
+	// [Plus difficile - bonus] 
+	Écrire une fonction qui prend en entrée 
+// un tableau de nombres positifs et qui retourne 
+// la deuxième plus grande valeur du tableau.
+
+	cf. capt
+	Est-ce que 3 existe dans le tab ? 
+	.?.
+	
+	soit 	t[i] = n 
+	soit non 
+	Si oui arret, la rép est oui  
+	sinon, ? Continuer le parcours. 
+	Une fois qu'on a fini de faire le parcours,
+	si on arrive jusque là, on ne s'est pas arrêté 
+	avant. 
+	<
+	!!! return est fonrcément dans une fonction. 
+	on a un tab t 
+	et une valeur n : on a besoin d'une fonction
+	pour les utiliser < 
+	<
+	uen fonction exist, qui reçoit un tab et un nb
+	et vérif que la case n° i est == n. 
+	<
+	quand on cherche la valeur 3, il devrait dire que 
+	ça existe : true, oui. 
+	<
+	le tableau est trié. 
+	<
+	/...
+	<
+	Recherche dichotomique / Binary search
+	<
+	... 
+	
+	Ce ne sont que des valeurs qui sont rangées par ordre 
+	croissant. 
+	Les nums des cases sont toujours 1 2 3 4 5.
+	.?.
+	<
+	A quel point c'est plus efficace? 
+	<
+	<
+	
+	..
+	
+	SI on a un tableau qui fait 
+	un million de cases 
+	
+	<
+	<

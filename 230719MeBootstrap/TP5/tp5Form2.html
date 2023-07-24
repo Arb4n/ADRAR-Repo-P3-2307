@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> TP5 Bootstrap - Formulaire de départ</title>
+  <link href="styles.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+</head>
+
+<body class="m-4">
+
+  <div class="container row">
+
+    <fieldset>
+
+      <div class="col col-1"></div>
+
+
+      <div class="col col-6">
+        <h1>Formulaire de départ</h1>
+        <div>
+          <form class="was-validated">
+            <fieldset>
+
+              <p>Vous trouverez ci-dessous un exemple de formulaire entièrement construit avec les commandes de
+                formulaire
+                de Bootstrap. Chaque groupe de formulaires requis a un état de validation qui peut être déclenché en
+                tentant
+                de soumettre le formulaire sans le remplir.</p>
+              <Legend> Adresse de facturation</Legend>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="prenom">Prénom</label>
+                  <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Entrez votre prénom"
+                    autofocus required minlength="2" maxlength="20">
+                  <div class="valid-feedback">Valid.</div>
+                </div>
+
+                <div class="col">
+                  <label for="nom">Nom de famille</label>
+                  <input type="text" class="form-control" name="nom" id="nom" placeholder="Entrez votre nom" autofocus
+                    required minlength="2" maxlength="20">
+                </div>
+              </div>
+
+              <div>
+                <label for="userName">Nom d'utilisateur</label>
+                <!-- !!!  ↑ ↑  !!! -->
+                <div class="input-group">
+
+
+                  <div class="input-group-prepend"><span class="input-group-text" aria-label="arobase">@</span></div>
+                  <input type="email" class="form-control" name="userName" id="userName" autofocus required
+                    minlength="6" maxlength="50">
+                </div>
+              </div>
+        </div>
+
+        <!-- <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text" aria-label="arobase">@</span></div>
+            <input type="email" class="form-control" placeholder="email" id="email">                  
+        </div>
+         -->
+        <div class="form-group">
+          <div>
+            <label for="email">Email (facultatif)</label>
+            <input type="email" class="form-control" name="email" id="email" autofocus minlength="6" maxlength="50">
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div>
+            <label for="adress">Adresse </label>
+            <input type="adress" class="form-control" name="adress" id="adress" placeholder="Ex : 1234 rue Broca"
+              autofocus required minlength="6" maxlength="100">
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="adress2">Adresse 2 (facultatif)</label>
+            <input type="adress2" class="form-control" name="adress2" id="adress2" placeholder="Appartement ou suite"
+              autofocus minlength="6" maxlength="100">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="selectionPays">Pays</label>
+              <select name="selectionPays" id="selectionPays" class="form-select" required>
+                <option value="">Choisir...</option>
+
+                <option value="">France</option>
+                <option value="">Espagne</option>
+                <option value="">Allemagne</option>
+                <option value="">Italie</option>
+                <option value="">Zimbabwe</option>
+
+              </select>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="form-group">
+              <label for="selectionVille">Ville</label>
+              <select name="selectionVille" id="selectionVille" class="form-select" required>
+                <option value="">Choisir...</option>
+
+                <option value="">Montpellier</option>
+                <option value="">Lusaka</option>
+                <option value="">Frankfurt</option>
+                <option value="">Valencia</option>
+                <option value="">Venezia</option>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+
+              <label for="codePostal">Code Postal</label>
+              <input type="text" class="form-control" name="codePostal" id="codePostal" required minlength="5"
+                maxlength="5">
+            </div>
+          </div>
+          <!-- end of row -->
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <hr class="hr hr-blurry w-75" />
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="c1" name="checkbox1" id="checkbox1">
+            <span> L'adresse de livraison est la même que mon adresse de facturation.</span>
+          </div>
+
+        </div>
+        <!-- TODO : gray line / separation  -->
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="c2" name="checkbox2" id="checkbox2">
+            <span> Enregistrez les informations pour la prochaine fois.</span>
+          </div>
+
+        </div>
+        <!-- TODO : gray line / separation  -->
+        <!-- Checkboxes/END -->
+        <div class="d-flex justify-content-between">
+          <hr class="hr hr-blurry w-75" />
+        </div>
+        <!-- RADIOS -->
+        <div class="form-group" required autofocus>
+          <legend>Paiement</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" id="radio1" value="o1">
+            <label class="form-check-label" for="radio1">Carte de Crédit</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+            <label class="form-check-label" for="radio2">Carte de débit</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" id="radio2" value="o2">
+            <label class="form-check-label" for="radio2">Paypal</label>
+          </div>
+
+        </div>
+        <!-- Radios/END -->
+
+        <!-- Infos Bancaires -->
+        <div class="row mb-3">
+          <div class="col">
+            <label for="cardName">Nom sur la carte</label>
+            <input type="text" class="form-control" name="cardName" id="cardName" autofocus required minlength="2"
+              maxlength="30">
+            <span>Nom complet tel qu'il est affiché sur la carte</span>
+            <form>
+              <div class="row mb-3 mt-3">
+                <!-- ↓ ↓  TODO : find how to auto slash between Month/Year ↓ ↓ -->
+                <div class="col">
+                  <label for="expiration">Expiration</label>
+                  <input type="text" class="form-control" name="expiration" id="expiration" required minlength="5"
+                    maxlength="5">
+                </div>
+                <div class="col">
+                  <label for="cvv">CVV</label>
+                  <input type="text" class="form-control" name="cvv" id="cvv">
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <div class="col">
+            <label for="cardNumber">Numéro de carte de crédit</label>
+            <input type="text" class="form-control" name="cardNumber" id="cardNumber" autofocus required minlength="16"
+              maxlength="16">
+          </div>
+
+          <!-- Infos bancaires/END -->
+
+          <div class="d-flex justify-content-between">
+            <hr class="hr hr-blurry w-75" />
+          </div>
+
+          <!-- Bouton -->
+          <div>
+            <button class="btn btn-primary w-50">Continuer à la caisse</button>
+          </div>
+
+        </div>
+
+        <div class="col col-1"></div>
+        <!-- Panier  -->
+
+        <div class="col col-3">
+          <ul class="list-group w-50 mt-3">
+
+            <h3 class=" d-flex justify-content-between align-items-center text-primary">Votre panier
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h3>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between"><span>Nom du produit</span> <span>12€</span></div>
+              <div><span>Brève description</span></div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between"><span>Deuxième élément</span> <span>8€</span></div>
+              <div><span>Brève description</span></div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between"><span>Troisième élément</span> <span>5€</span></div>
+              <div><span>Brève description</span></div>
+            </li>
+            <li class="list-group-item ">
+              <div class="d-flex justify-content-between"><span> Code Promo</span> <span>-5€</span></div>
+              <div><span>EXEMPLECODE</span></div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between"><span>Total(USD)</span> <span>20€</span></div>
+
+            </li>
+          </ul>
+
+          <!-- <div class="form-control w-50 d-flex justify-content-between">
+  <div class="d-flex">
+    <span>
+      <input class="form-control" type="text" placeholder="Code Promo">
+    </span>
+  </div>
+  <div class="d-flex">
+    <button class="btn btn-secondary">Echanger</button>
+  </div>
+</div>
+Explanation:
+
+Wrap the "Code Promo" input field and the "Echanger" button inside separate <div> elements and apply the d-flex class to each of them. The d-flex class enables flexbox behavior, allowing you to control the layout of the child elements.
+
+Apply the justify-content-between class to the parent <div> with the class form-control w-50. The justify-content-between class pushes the child elements to opposite ends of the container, creating space between them and making them stick to the left and right edges of the container, respectively.
+
+By doing this, the "Code Promo" input field and the "Echanger" button will be placed side by side, with the input field on the left and the button on the right, both taking up 50% of the container's width (w-50 class). The form-control class ensures that the container has proper Bootstrap form control styling.
+
+Note: If the above code does not produce the desired result, make sure you have correctly included the Bootstrap CSS and JavaScript files in your HTML file.
+
+
+
+
+
+
+ -->
+          <!--   <div class="row mb-3">
+              <div class="col">
+                <label for="prenom">Prénom</label>
+                <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Entrez votre prénom"
+                  autofocus required minlength="2" maxlength="20">
+                <div class="valid-feedback">Valid.</div>
+              </div>
+ -->
+          <div class="form-control w-50 d-flex justify-content-between">
+
+            <span><input class="form-control" type="text" placeholder="Code Promo"></span>
+            <button class="btn btn-secondary">Echanger</button>
+          </div>
+        </div>
+
+        
+      </div>
+  </div>
+  </fieldset>
+  <!-- End/container -->
+  </div>
+  </fieldset>
+  </form>
+
+  </div>
+
+  </div>
+
+</body>
+
+</html>

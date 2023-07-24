@@ -1,0 +1,11 @@
+faceRight();
+setPos(100,300);
+setLineWidth(10);
+
+for(let i = 0 ; i < 4 ; i++) {
+    for(let j = 0 ; j < 3 ; j++) {
+        forward(100);
+        right(120);
+    }
+    forward(100);
+}

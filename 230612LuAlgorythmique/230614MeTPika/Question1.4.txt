@@ -1,0 +1,12 @@
+pikachu(1,4)
+
+Je crée les variables a et b, et je mets 1 et 4 dedans.
+Je crée une variable result et je mets 0 dedans.
+Début de la boucle : je crée i et je mets 0 dedans.
+Est-ce que i(0) < a(1) ? Oui
+    J'incrémente result(0) de b(4) -> result passe à 4.
+J'incrémente i(0) de 1 -> i passe à 1.
+Est-ce que i(1) < a(1) ? Non, la boucle est terminée.
+J'ai trouvé la solution : 4
+
+Envoyer un message dans #🧮-algo

@@ -1,0 +1,208 @@
+// Déclarer une variable : 
+var toto = "Bonjour";  // Cette var est function scope. elle est globale, on peut l'appeler à l'ext d'une fonction.
+let bye = 12; // définie dans son bloc. = let et const sont block scope. Pq ? Pour éviter les erreurs, var pouvant être appelé nulle part.
+// On utilisera plus let et const. 
+const jojo = "au revoir";// const = variable non modif. 
+const API = "90978934730394893";
+
+
+// LES TYPES DE VARIABLES
+// string
+// number
+// boolean
+//object
+//array
+//function
+
+let calcul = 5 + 6;
+console.log(calcul);
+// alert(toto);
+
+
+/* 
+ 
+Mon comm sur plusieurs lignes
+
+*/
+
+
+//Opérations
+
+// + addition : 
+// additionner des chiffres ou des chaînes de caras : 
+
+let ma_chaine = "Hello" + " la société";
+let ma_chaine2 = " ou le monde " + "ou ladies & gentlemen";
+
+// On peut aussi additionner des opérations entre elles
+console.log(ma_chaine + ma_chaine2);
+
+// methodes = outils de js qui permettent de faire une action 
+// Ex: parseInt
+ma_chaine = parseInt(ma_chaine); //transforme une chaine de caras en nb.
+ma_chaine2 = 45;
+console.log(ma_chaine + ma_chaine2);
+
+ma_chaine = "1";
+ma_chaine2 = "2";
+
+let result = ma_chaine + ma_chaine2;
+
+console.log(result);
+console.log(typeof (ma_chaine));
+
+// Incrémentation / Décrémentation
+// ++
+// --
+// +=
+//-= ; *+ ; /+ ; %=
+
+
+// Opérateurs logiques = ? 
+// && ; ||
+// A quoi ça sert ? COMPARER DES VALEURS
+
+let pomme = "verte";
+
+//  pomme && poire > false
+// pomme || poire > true
+
+
+// Opérateurs de comparaison
+// ==; égal à
+// === le contenu et le type de la variable sont égal
+
+let nombre1 = 5;
+let nombre2 = "5";
+
+// nombre1 == ma_chaine renvoie true
+// nombre2 === ma_chaine renvoie false
+
+
+// != diffé de 
+// !== contenu + type diffé de 
+// > supé à
+// >= supé ou égal
+// <
+// <=
+
+
+
+//  CONDITIONS
+// if ... else
+// condition si sinon
+// if, else, else if
+
+/*
+if (condition){
+     
+    resultat si elle est vraie; 
+} 
+else {
+    alternative si elle est fausse
+}
+ 
+*/
+
+if (ma_chaine == ma_chaine2) {
+    console.log("C'est vrai");
+} else {
+    console.log("C'est faux");
+}
+
+let num = 25;
+let num2 = 25;
+
+if (num === num2) {
+    console.log("C'est vrai");
+    num++;
+    if (num != num2) {
+        console.log("en fait c'est faux");
+    } else {
+        console.log("en fait c'est vrai");
+    }
+}
+
+
+// Méthode prompt() : permet de générer une zone de saisie dans 
+// le nav et de récup la valeur. 
+
+let age = prompt("veuillez saisir votre age");
+console.log(age);
+
+// Exo: Avec la methode prompt, comparer l'age avec 
+// un nombre fixe. 
+// exemple age < 18, et afficher dans la console un texte
+//  un message approp.
+// enchaîner if, else, else if. 
+
+
+// if (age < 18) {
+//     alert("Ce site est interdit aux mineurs");
+//     if (age <= 5) {
+//         alert("??? Mais où sont tes parents ???")
+//         console.log("!!! POLICE !!!");
+//     }
+// } else if (18 < age && age < 30) {
+//     alert("Bienvenue, jeune padawan du uc");
+// } else if (age > 30) {
+//     alert("Bienvenue, vieux pervers");
+// }
+// else {
+//     alert("Ecrivez une valeur numérique en entier");
+// }
+
+// Correction
+// let correctAge = prompt("âge ? "); 
+// age = parseInt(age);
+
+// if (typeof age === 'number' && !isNaN(age)) {
+//     if (age < 18){
+//         console.log("vous êtes mineur, dégagez-moi de là")
+//     } else if (age >= 18 && age <= 60){
+//         console.log("Vous êtes un vieux croûlant")
+//     } else if ( age >= 60 && age <= 80){
+//         console.log("Vous toussez de la poussière")
+//     } else {
+//         console.log("Belle perf");
+//     };
+// } else { 
+//     console.error("erreur, saisir un nombre"); 
+
+// }
+
+//  ET  autre méthode if else, à utiliser peu
+// LA CONDITION TERNAIRE
+// condition , mon code si vrai : mon code si faux
+age < 18 ? console.log("mineur") : console.log("majeur"); 
+
+
+// LA CONDITION SWITCH CASE
+// switch (true) {
+//     case age == 18:
+//     console.log("la majorité"); 
+//     break;
+//     case age > 67: 
+//     console.log("vieux");
+//     break; 
+// }
+// // Permet de préciser plus la condition, code plus rapide. 
+
+let fruit ="pasteque";
+ switch (fruit) {
+    case 'poire' : 
+    alert("c'est une poivre");
+    break;
+    case 'pomme': 
+    alert("c'est une promme");
+    break;
+    default : 
+    alert("fruit inconnu au batailon");
+ }
+
+
+//  Exercice mélange de couleurs : 
+// Réaliser un script qui permet de mélanger deux couleurs en fonction
+// de ce que l'utilisateur saisit.
+// Exemple : blue et rouge = violet
+

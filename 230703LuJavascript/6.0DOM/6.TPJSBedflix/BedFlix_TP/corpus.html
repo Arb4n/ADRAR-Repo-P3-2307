@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Bed~Flix</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Ysabeau+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Yas/CorpusStyle.css">
+        <link rel="stylesheet" href="./Steven/Moi/AccueilNavBarStyle.css">
+       
+        <link rel="stylesheet" href="./Luc/CarouselStyle.css">
+    </head>
+
+
+    <body>
+            <!-- Début Header et Nav barre -->
+        <header>
+            <nav id="NavBar">
+                <!-- Coté Gauche -->
+                <div id="LeftSide">
+                    <img id="BedFlixLogo" src="https://cdn.discordapp.com/attachments/1113769683485720657/1123939247171313694/image.png" id="Accueil">
+                    <ul>
+                    <!-- Liens clicables-->
+                        <li><a class="Lien" id="Accueil" href="" >Accueil</a></li>
+                        <li><a class="Lien" id="Series" href="" >Séries</a></li>
+                        <li><a class="Lien" id="Films" href="" >Films</a></li>
+                        <li><a class="Lien" id="Nouveautes" href="" >Nouveautés les plus regardées</a></li>
+                        <li><a class="Lien" id="MaListe" href="" >Ma liste</a></li>
+                        <li><a class="Lien" id="Explorer" href="" >Explorer par langue</a></li>
+                    </ul>
+                </div>
+
+            <!-- Coté droit -->
+                <div id="RightSide">
+                    <!-- Barre de recherche-->
+                    <input type="text" name="search" placeholder="Titres, personnes, genres">
+                    <a href="" >Jeunesse</a>
+                    <img id="BedFlixLogo" src="./Steven/Moi/NotifBell2.png" alt="Notifications">
+                    <img id="BedFlixLogo" src="./Steven/Moi/DangoToken.jpg" alt="Profil">
+                </div>
+            </nav>
+        </header>
+        <!-- Fin Header et Nav barre -->
+
+
+        <!--Element vedette-->
+        <section>
+            <div class="mostView"> <!-- J AI ENLEVER UNE CATEGORIE !!!!-->
+                <div class="title"><p>The Witcher</p></div> <!-- Ajouter un titre manuelement -->
+                <div class="new"><p>Nouvelle saison !</p></div>
+                <div class="view"><p><img src="images/right-arrow.png"> Visionner</p></div>
+                <div class="infos"><p><img src="images/exclamation.png"> En savoir plus</p></div>
+            </div>
+        </section>
+
+        <!--Carrousel-->
+        <section id="FilmsCarousel" class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        
+        </section>
+
+        <!--Début du footer-->
+        <footer>
+            <div class="sommaire">
+                <div id="socialMedia">
+                    <div class="reseaux" id="facebook"><a><img src="./images/facebook_.png"></a></div>
+                    <div class="reseaux" id="instagram"><a><img src="./images/instagram.png"></a></div>
+                    <div class="reseaux" id="twitter"><a><img src="./images/twitter.png"></a></div>
+                    <div class="reseaux" id="youtube"><a><img src="./images/youtube.png"></a></div>        
+                 </div>  
+                
+                <div class="services">
+                    <a>Autodescription</a>
+                    <a>Relation investisseur</a>
+                    <a>Confidentialité</a>
+                    <a>Nous contacter</a>
+                    <a>Centre d'aide</a>
+                    <a>Recrutement</a>            
+                    <a>Informations légales</a>
+                    <a>Cartes cadeaux</a>
+                    <a>Préférences de cookies</a>
+                    <a>Presse</a>
+                    <a>Conditions d'utilisations</a>
+                    <a>Mentions légales</a>
+                </div>
+        
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="./Luc/bedflix.js" defer></script>
+    </body>
+
+
+</html>

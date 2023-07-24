@@ -1,0 +1,125 @@
+LE DOM, Document Object Model
+
+Analogie possible avec une arborescence.
+HTML = enchainement de balises : le DOM est ça 
+= ensemble de la structure html dispo via js. 
+
+Accéder à un élément à partir de sa balise : 
+.querySelector("h1") et .querySelectorAll("p")
+Toutes ces méthodes-là appellent un contexte. Le contexte est la page html. 
+Dans mon doc, je veux slect la balise h1.
+Si on fait un queroy selector et qu'il y a psieurs objets dedans, retour un iobjet element.
+Si ? retourne la première occurence.
+Si on veut récup l'ensemble  des occurences de la balise, on fait querySelectorAll : 
+querySelectorAll() retourne un tab de toutes les occurences de la balise. 
+
+
+
+
+
+
+
+LES EVENEMENTS
+
+In html : 
+    PAR LES ATTRIBUTS
+    <button > Clique sur moiii ♥ </button>
+        ↓         ↓
+    <button onclick="console.log> Clique sur moiii ♥ </button>
+
+    !! Il y a sur le web des listes d'événement
+
+    <button onmouseover ="console.log> Clique sur moiii ♥ </button>
+    Trsè pratique en ReactJS 
+
+    PAR ADDEVENTLISTENER
+    La methode la plus recommandée si tu eux faire du js 
+    natif.
+    Deux params : le premier est le type d'event nana.
+    Le deuxième va attendre une fonction. 
+    
+
+
+
+230711
+TRY/CATCH
+    EN JS, il y a une gestion des erreurs ; 
+    quand il y a if else et qu'on vérifie que la donnée 
+    est bonne, on a déjà une gestion d'erreur.
+    → try / catch
+
+    le bloc try qui va lancer le 
+    truc. 
+    Et catch qui va gérerles erreurs.
+    Pour gérer les erreurs,
+    param 'e' ou error.
+    cf. console.error
+    pour gérer une erreur et 
+    la capturer, 'throw'. 
+
+Récup des erreurs possible par une base sql
+Séuriser la data possible 
+
+
+LES API 
+
+Application Programming interface. 
+C'est un ensemble de classes et de méthodes qui permettent de communiquer
+avec d'autres produits et services.
+Annuaire téléphonique: permet aux humains d'échanger des infos :
+API permet de communiquer avec un ordi pour récupérer des infos
+au travers d'une demande. 
+
+Le format JSON>>
+Un format de texte / données qui se structure en tab 
+associatif. 
+On peut avoir différents types d'objets,
+des données, des data etc. 
+
+EG>> let json = {
+    'adress': "fserfeves",
+    'mail': [mail1", "mail2"]
+    "data": {
+        "etc..."
+    }
+: }
+
+Toutes les clefs sont entre guillemets.
+Quand on va util des api en requetage, 
+on va souvent les formater en json.
+
+API FETCH>>
+Méthode de données externes. 
+
+>
+>> Ici, récup de données.
+>
+
+D'autres formats : 
+XMLHTTPREQUEST
+ajax, sympa , fait de l'asynchrone
+fecth, instantané. 
+
+>>
+>
+>>méthode fetch 
+>
+. then va traiter le résultat
+ça attend une fonction
+On va d'ab traduire les données en json ('response.json')
+>
+Pour chaque data qu'on récup, on peut les log
+>
+ici, on peut faire un data.country
+oudata.name pour récup le pays ou l'univ etc. 
+>
+in barre de navig : taper name=montpellier
+>
+
+RECAP>>
+fetch permet de faire la reqt à la cible
+cible = url ; 
+.then permet de traduire /formater les données en json /tab associatif.
+deuxième.then permet de récup les données
+Et .catch capture les erreurs potentielles de la reqt.
+

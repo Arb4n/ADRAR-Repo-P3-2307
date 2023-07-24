@@ -1,0 +1,150 @@
+D>> 230620 <<D
+
+>> re: variables 
+>> boucle for :
+	important = for, parenthèses, points-virg, accolades. 
+	for (let i=0 ; i<3 ; i++) {
+	'corps'
+	}
+
+>> modulo 
+
+n!! modulo 10 ou 100 ou 1000 = partic 
+n!! modulo 2 = pairs
+
+>> fonction : 
+Comment s'écrit-elle ? 
+Qu'est-ce que c'est ? 
+Comment l'appelle-t-on ? 
+Quelles en sont les variantes ? 
+
+l'entrée (parenthèses stocke la valeur 
+qu'on va nous donner. 
+
+
+
+
+<
+<
+<
+<
+<
+F8ter
+
+On dit que c'est une machine qui est capb 
+de dire : la plus grande entre ces 
+deux couleurs, c'est telle couleur.
+elle compare les couleurs : 
+jaune vert gris
+
+On lui a donné jaune, vert en maxN1N2 
+une solution donnée est vert > jaune 
+
+On appelle à nouveau la fonction en lui donnant vert 
+et gris. 
+le plus grand entre les deux est le vert, donc. 
+
+ici, f7(maxN1n2...
+est la plus grande des solutions, donc.
+Donc on veut la retourner. 
+
+!!! Ne pas hésiter à refaire à la main !!
+
+<
+<
+<
+
+On nous dit dans cet exercice : 
+une fonction est déjà en place.
+Mais on peut utiliser le bloc "dessiner une étoile"
+= pt de vue externe 
+
+
+
+
+
+
+
+<
+<
+<
+<
+
+Me montrer les processus intermédiaires ; 
+qu'est-ce qu'il fait ?
+>> aller dans 'debugger' 
+petit signer = *breakpoint* 
+= point d'arrêrt
+= l'ordi s'arrête quand il arrive dessus. 
+'paused on breakpoint' 
+Et dans la console, on le voit. 
+On n'a pas les messages postérieurs/ 
+on cliquue sur la flêche 'paused in';
+il a bien écrit bonjour dans la console.
+
+On voit qu'il a bien créé une variable qui 
+s'appelle number et qui contient 2 
+-
+<
+<
+<
+
+
+<
+<
+<
+
+Faire un carré en haut à gauche : 
+faire quatre carrés :
+Mais on a quatre lignes 
+de code ; cf. ex D9.
+créer une variable qui compte de 100 à 200.
+Boucle : 
+
+
+<_____
+
+
+>>
+
+!!! Bien reprendre les exos faits pour 
+bien comprendre qu'est une variable, 
+une boulce, etc. Comment
+ça fonctionne. 
+
+____
+
+<
+<
+<
+
+Imaginons que tu veux faire un petit programme. 
+Pour simuler le fait de edemander une valeur à 
+l'utilisateur : 
+
+Pour déterminer si une personne est 
+mineure ou majeure, 
+on peut utiliser un 'if'. 
+c>> 
+let age = 15; 
+if (age < 18) {
+	console.log("la personne est mineure");
+} else { 
+	console.log("la personne est mageure");
+}
+c<<
+
+! Si on a 200 personnes, cela peut être complicado.
+On ne peut que difficilement utiliser une boucle.
+Go fonction ! 
+
+Beaucoup plus lisible, mais prob : 
+la boucle ne permet pas de jongler entre 
+3 variables. 
+
+mrd, rien écouté 
+
+Utiliser un tableau oui !!! 
+Pourquoi utiliser un tableau ? 
+Cela ne permet pas de faire plus de 
+choses que ça, maiiiis ?? ^^'

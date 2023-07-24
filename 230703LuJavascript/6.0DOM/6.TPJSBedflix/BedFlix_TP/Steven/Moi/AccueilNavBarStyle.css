@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url(BebasNeueRegular.eot);
+    src: url(BebasNeueRegular.eot?#iefix) format('embedded-opentype'),
+         url(BebasNeueRegular.woff) format('woff'),
+         url(BebasNeueRegular.ttf) format('truetype'),
+         url(BebasNeueRegular.svg) format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    /* background-size: cover;
+    background-image: url(WitcherWP.jpg);
+    background-color: #141414; */
+    font-family: 'BebasNeueRegular', sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    flex-direction: row;
+    position: sticky;
+}
+
+nav #BedFlixLogo{
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 92.5px;
+    height: 31px;
+}
+
+nav #LeftSide{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav #RightSide{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 60px;
+    align-items: center;
+}
+
+nav #RightSide input[type=text]{
+    border: 1px solid white;
+    background-color: black;
+    margin-right: 15px;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    size: 31px;
+}
+
+nav #RightSide a{
+    color: white;
+    text-decoration: none;
+}
+
+nav #RightSide img{
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+nav .Lien{
+    color: white;
+    text-decoration: none;
+}
+
+nav #Accueil{
+    font-weight: bold;
+}
+

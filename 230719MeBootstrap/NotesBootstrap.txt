@@ -1,0 +1,22 @@
+div.d-flex = racc pour classes 
+alt+shift+f
+
+
+>> Ressources>> 
+Eyedropper
+
+Bootstrap Framework : 
+https://docs.google.com/presentation/d/1oQLgPXkIPnrJ1NPT_J4k2-tdVPKFE-E0gXuSUL8I7ic/edit?usp=sharing
+
+List of Bootstrap Classes : 
+https://hackerthemes.com/bootstrap-cheatsheet/
+
+Annuler la mise en page CSS de base sur Navigateur:
+https://cdn.discordapp.com/attachments/1097824336364187793/1131518523106148402/reset.css
+
+
+
+>> For tPS>>
+>> TP CARDS>>
+https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
+https://www.pierre-giraud.com/bootstrap-apprendre-cours/card/
