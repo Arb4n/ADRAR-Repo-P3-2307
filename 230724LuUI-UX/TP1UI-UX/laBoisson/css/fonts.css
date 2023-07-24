@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'MADE Sunflower';
+    src: url(MadeSunflower.otf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto.ttf);
+}
+
+@font-face {
+    font-family: 'Rammetto One';
+    src: url(../fonts/RammettoOne.ttf);
+}
+
+@font-face {
+    font-family: 'KeepCalm';
+    src: url(../fonts/KeepCalm.ttf);
+}

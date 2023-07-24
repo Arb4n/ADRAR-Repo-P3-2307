@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section id="header-top">
+            <div class="container-fluid d-flex justify-content-between align-items-center my-2">
+                <a href="homepage.html"><img id="logo" src="../images/logo.jpg"></a>                <input class="w-25 rounded-pill" id="searchbar" type="text" placeholder="Rechercher un produit...">
+                <div id="header-icons" class="me-3">
+                    <a href="contact.html"><img src="../images/user.png"></a>
+                    <a href="panier.html"><img src="../images/panier.png"></a>
+                </div>
+            </div>
+        </section>
+        <section id="header-bottom">
+            <nav class="navbar navbar-expand">
+                <div class="container-fluid d-flex justify-content-center">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link header-nav-text" href="homepage.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle header-nav-text" type="button" data-bs-toggle="dropdown" data-bs-target="#dropdown-juice" aria-expanded="false">Jus de fruit</button>
+                                <ul class="dropdown-menu" id="dropdown-juice">
+                                    <li><a class="dropdown-item" href="shop_jusDeFruits.html">Voir tout</a></li>
+                                    <li><a class="dropdown-item" href="#">Populaires</a></li>
+                                    <li><a class="dropdown-item" href="#">Nouveautés</a></li>
+                                    <li><a class="dropdown-item" href="#">Promotions</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle header-nav-text" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sirops</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="shop_sirops.html">Voir tout</a></li>
+                                    <li><a class="dropdown-item" href="#">Populaires</a></li>
+                                    <li><a class="dropdown-item" href="#">Nouveautés</a></li>
+                                    <li><a class="dropdown-item" href="#">Promotions</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle header-nav-text" type="button" data-bs-toggle="dropdown" aria-expanded="false">Cocktails</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="shop_cocktails.html">Voir tout</a></li>
+                                    <li><a class="dropdown-item" href="#">Populaires</a></li>
+                                    <li><a class="dropdown-item" href="#">Nouveautés</a></li>
+                                    <li><a class="dropdown-item" href="#">Promotions</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+
+    <!--  -->
+    <!-- <div class="notreSelection text-white p-3 d-flex justify-content-center">
+        <h1> <strong> <span>Notre sélection </span> </strong></h1>
+    </div> -->
+
+
+    <div class="d-flex justify-content-around text-light mt-5 mb-5">
+
+        <!-- First card row -->
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\sirop-pêche.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\51MU4a9EnqL.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img/Sirops/caramel-sirop-monin-70cl.jpg"
+                    style="width: 100%">
+                <div>
+                    <h4 class="text-center">Boisson</h4>
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="d-flex justify-content-around text-light mb-5">
+
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\monin-sirop-a-la-pomme-verte-250ml.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\monin-sirop-fraise-1-l-1006116-fr.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-25 ">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\Sirop kiwi.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- NB>> how to align content in cards ?? -->
+
+    <!-- 
+  paddding : p-1
+  margin : m-1
+  width : style = "width: 25%"
+ -->
+
+
+
+ 
+
+
+</body>
+
+<!-- Footer  -->
+<hr>
+    <footer>
+        <div class="d-flex justify-content-evenly my-5">
+            <div class="d-flex flex-column">
+                <h4 class="font-rammetto color-orange">Information</h4>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">FAQ</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Service personnalisé</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Suivre vos commandes</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Informations livraison</a>
+            </div>
+            <div class="d-flex flex-column">
+                <h4 class="font-rammetto color-orange">Liens utiles</h4>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Politiques de confidentialité</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Termes et conditions</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Méthodes de livraison</a>
+            </div>
+            <div class="d-flex flex-column">
+                <h4 class="font-rammetto color-orange">Catégories</h4>
+                <a href="shop_jusDeFruits.html" class="footer-link font-keep text-decoration-none color-black">Jus de fruits</a>
+                <a href="shop_sirops.html" class="footer-link font-keep text-decoration-none color-black">Sirops</a>
+                <a href="shop_cocktails.html" class="footer-link font-keep text-decoration-none color-black">Cocktails</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

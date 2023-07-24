@@ -1,0 +1,114 @@
+.font-rammetto {
+  font-family: Rammetto One, cursive;
+}
+
+.font-keep {
+  font-family: KeepCalm, sans-serif;
+}
+
+.color-blue {
+  color: #0442BF;
+}
+
+.color-red {
+  color: #F20505;
+}
+
+.color-green {
+  color: #48D904;
+}
+
+.color-yellow {
+  color: #F2E205;
+}
+
+.color-orange {
+  color: #F27405;
+}
+
+.color-black {
+  color: #171717;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#header-bottom {
+  background-color: #F2E205;
+}
+
+#searchbar {
+  height: 2.5rem;
+  border-width: 0.1rem;
+  padding: 20px;
+}
+
+#searchbar:focus {
+  outline: none;
+}
+
+#searchbar input {
+  border: none;
+}
+
+#searchbar input:focus {
+  outline: none;
+}
+
+#header-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-nav-text {
+  font-family: Rammetto One, cursive;
+  color: #F20505;
+  border: none;
+}
+
+.header-nav-text:hover {
+  color: white;
+}
+
+.header-nav-text:focus {
+  color: white;
+}
+
+.header-nav-text:active {
+  color: white !important;
+}
+
+.dropdown-item {
+  font-family: Rammetto One, cursive;
+  color: #F20505;
+}
+
+.info img {
+  width: 50px;
+  height: 50px;
+}
+
+.info div h3 {
+  padding-left: 1rem;
+  margin-bottom: 0;
+  font-family: Rammetto One, cursive;
+  font-size: 1.25rem;
+  color: #48D904;
+}
+
+.info div p {
+  padding-left: 1rem;
+  margin-bottom: 0;
+  font-family: KeepCalm, sans-serif;
+  font-size: 0.75rem;
+}
+
+.footer-link {
+  margin: 0.5rem 0;
+}/*# sourceMappingURL=styles.css.map */

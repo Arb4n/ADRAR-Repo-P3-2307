@@ -1,0 +1,145 @@
+/* CSS Mur de bouteilles */
+/* Color Theme Swatches in Hex */
+.mur-de-bouteilles-1-hex {
+    color: #0442BF;
+}
+
+.mur-de-bouteilles-2-hex {
+    color: #48D904;
+}
+
+.mur-de-bouteilles-3-hex {
+    color: #F2E205;
+}
+
+.mur-de-bouteilles-4-hex {
+    color: #F27405;
+}
+
+.mur-de-bouteilles-5-hex {
+    color: #F20505;
+}
+
+/* Color Theme Swatches in RGBA */
+.mur-de-bouteilles-1-rgba {
+    color: rgba(3, 66, 191, 1);
+}
+
+.mur-de-bouteilles-2-rgba {
+    color: rgba(71, 216, 4, 1);
+}
+
+.mur-de-bouteilles-3-rgba {
+    color: rgba(242, 226, 4, 1);
+}
+
+.mur-de-bouteilles-4-rgba {
+    color: rgba(242, 115, 4, 1);
+}
+
+.mur-de-bouteilles-5-rgba {
+    color: rgba(242, 4, 4, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.mur-de-bouteilles-1-hsla {
+    color: hsla(219, 96, 38, 1);
+}
+
+.mur-de-bouteilles-2-hsla {
+    color: hsla(101, 96, 43, 1);
+}
+
+.mur-de-bouteilles-3-hsla {
+    color: hsla(56, 96, 48, 1);
+}
+
+.mur-de-bouteilles-4-hsla {
+    color: hsla(28, 96, 48, 1);
+}
+
+.mur-de-bouteilles-5-hsla {
+    color: hsla(0, 96, 48, 1);
+}
+
+
+/* SASS Mur de bouteilles */
+
+/* Color Theme Swatches in Hex */
+/*
+$mur-de-bouteilles-1-hex: #0442BF;
+$mur-de-bouteilles-2-hex: #48D904;
+$mur-de-bouteilles-3-hex: #F2E205;
+$mur-de-bouteilles-4-hex: #F27405;
+$mur-de-bouteilles-5-hex: #F20505;
+*/
+/* Color Theme Swatches in RGBA */
+/*
+$mur-de-bouteilles-1-rgba: rgba(3,66,191, 1);
+$mur-de-bouteilles-2-rgba: rgba(71,216,4, 1);
+$mur-de-bouteilles-3-rgba: rgba(242,226,4, 1);
+$mur-de-bouteilles-4-rgba: rgba(242,115,4, 1);
+$mur-de-bouteilles-5-rgba: rgba(242,4,4, 1);
+*/
+/* Color Theme Swatches in HSLA */
+/*
+$mur-de-bouteilles-1-hsla: hsla(219, 96, 38, 1);
+$mur-de-bouteilles-2-hsla: hsla(101, 96, 43, 1);
+$mur-de-bouteilles-3-hsla: hsla(56, 96, 48, 1);
+$mur-de-bouteilles-4-hsla: hsla(28, 96, 48, 1);
+$mur-de-bouteilles-5-hsla: hsla(0, 96, 48, 1);
+*/
+
+
+.card * {
+    border-radius: 20%;
+    height: auto;
+    /* width: 25em; */
+}
+ .card:hover {
+    border: dashed orange;
+    
+ }
+
+.notreSelection {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: rgba(242, 115, 4, 1); */
+    /* color: rgba(242, 226, 4, 1); ; */
+}
+
+li:hover {
+    border-radius: 20%;
+    background-color: #F27405;
+    color: white;
+    font-weight: 900;
+}
+
+/**
+.navbar-brand {
+    font-weight: 900;
+    border: dashed;
+    padding: 1em;
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom,
+            rgba(255, 255, 0, 0.5),
+            rgba(255, 145, 0, 0.5)), url("./img/vecteezy_mix-juice-logo_.jpg");
+    
+            background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+*/
+.footer {
+    margin-top: 10em;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 255, 98, 0.5),
+            rgba(255, 255, 0, 0.5)), url("img\vecteezy_mix-juice-logo_.jpg");
+}
+
+body {
+    margin-bottom: 10em;
+    border-width: 5%;
+    border-radius: 25;
+}

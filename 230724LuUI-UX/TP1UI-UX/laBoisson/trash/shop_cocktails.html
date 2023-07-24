@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <!-- dropdown  ↓ -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+
+    <title>pshhh - Shop</title>
+</head>
+
+<body class="mainBody">
+
+    <!-- TODO Alert ! randomized -->
+
+    <!-- Navbar -->
+
+    <!-- <div class="row-align-items-center">
+        <nav class="navbar navbar-light bg-light navbar-expand-sm d-flex justify-content-between" p-5>
+            <ul class="text-white navbar-nav mr-auto ms-3">
+
+                <h2 class="navbar-brand">PSHHH</h2>
+
+                <li class="nav-link"> Accueil </li>
+                <li class="nav-link"> Boutique </li>
+                <li class="nav-link"> Panier </li>
+
+            </ul>
+        </nav>
+    </div> -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-warning-subtle m-0 p-5">
+       
+        <div class="container px-4 px-lg-5 d-flex
+    ">
+            
+            <a class="navbar-brand" href="homepage.html">PSHHH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="homepage.html">Accueil</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="shop.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Boutique</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">Tous nos produits ! </a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">0 degrés - Sirops</a></li>
+                            <li><a class="dropdown-item" href="#!">Avec beaucoup de degrés - Alcools</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="notreSelection text-white p-3 d-flex justify-content-center">
+                    <h1> <strong> <span>Notre sélection </span> </strong></h1>
+                </div>
+            
+                <form class="d-flex ml-3">
+                    
+                    <button class="btn btn-outline-success" type="submit">
+                       
+                        <i class="bi-cart-fill m-1 mb-1"></i>
+                        Panier
+                        <span class="badge bg-primary text-white ms-2 m-2 p-2 rounded-pill">0</span>
+                    </button>
+                    
+                </form>
+            </div>
+        </div>
+       
+    </nav> -->
+
+
+    <header>
+        <section id="header-top">
+            <div class="container-fluid d-flex justify-content-between align-items-center my-2">
+                <a href="homepage.html"><img id="logo" src="../images/logo.jpg"></a>
+                
+                <input class="w-25 rounded-pill" id="searchbar" type="text" placeholder="Rechercher un produit...">
+                <div id="header-icons" class="me-3">
+                    <img src="../images/user.png">
+                    <img src="../images/panier.png">
+                </div>
+            </div>
+        </section>
+        <section id="header-bottom">
+            <nav class="navbar navbar-expand">
+                <div class="container-fluid d-flex justify-content-center">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link header-nav-text" href="homepage.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle header-nav-text" type="button" data-bs-toggle="dropdown" data-bs-target="#dropdown-juice" aria-expanded="false">Jus de fruit</button>
+                                <ul class="dropdown-menu" id="dropdown-juice">
+                                    <li><a class="dropdown-item" href="#">Voir tout</a></li>
+                                    <li><a class="dropdown-item" href="#">Populaires</a></li>
+                                    <li><a class="dropdown-item" href="#">Nouveautés</a></li>
+                                    <li><a class="dropdown-item" href="#">Promotions</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle header-nav-text" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sirops</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Voir tout</a></li>
+                                    <li><a class="dropdown-item" href="#">Populaires</a></li>
+                                    <li><a class="dropdown-item" href="#">Nouveautés</a></li>
+                                    <li><a class="dropdown-item" href="#">Promotions</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle header-nav-text" type="button" data-bs-toggle="dropdown" aria-expanded="false">Cocktails</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Voir tout</a></li>
+                                    <li><a class="dropdown-item" href="#">Populaires</a></li>
+                                    <li><a class="dropdown-item" href="#">Nouveautés</a></li>
+                                    <li><a class="dropdown-item" href="#">Promotions</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+
+    <!--  -->
+    <!-- <div class="notreSelection text-white p-3 d-flex justify-content-center">
+        <h1> <strong> <span>Notre sélection </span> </strong></h1>
+    </div> -->
+
+
+    <div class="d-flex justify-content-around text-light mt-5 mb-5">
+
+        <!-- First card row -->
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\sirop-pêche.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\51MU4a9EnqL.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img/Sirops/caramel-sirop-monin-70cl.jpg"
+                    style="width: 100%">
+                <div>
+                    <h4 class="text-center">Boisson</h4>
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="d-flex justify-content-around text-light mb-5">
+
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\monin-sirop-a-la-pomme-verte-250ml.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-25">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\monin-sirop-fraise-1-l-1006116-fr.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-25 ">
+            <div class="card-body border border-1 border-light-subtle m-1 p-1 ">
+                <img class="card-img-top"
+                    src="img\Sirops\Sirop kiwi.jpg"
+                    style="width: 100%">
+                <div>
+                                       <h4 class="text-center">Boisson</h4>
+
+                </div>
+                <div>Un résumé. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae eveniet dolores quasi sit cum voluptates possimus, magnam quod sunt,
+                    doloribus quisquam dignissimos pariatur, quaerat id minus sequi!
+                    Ullam, eum et. </div>
+                <div class="d-flex justify-content-end">
+                    Prix : X€
+                </div>
+                <div class="d-flex justify-content-around p-4">
+                    <button class="btn btn-outline-warning">Achat </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- NB>> how to align content in cards ?? -->
+
+    <!-- 
+  paddding : p-1
+  margin : m-1
+  width : style = "width: 25%"
+ -->
+
+
+
+ 
+
+
+</body>
+
+<!-- Footer  -->
+
+<hr>
+    <footer>
+        <div class="d-flex justify-content-evenly my-5">
+            <div class="d-flex flex-column">
+                <h4 class="font-rammetto color-orange">Information</h4>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">FAQ</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Service personnalisé</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Suivre vos commandes</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Informations livraison</a>
+            </div>
+            <div class="d-flex flex-column">
+                <h4 class="font-rammetto color-orange">Liens utiles</h4>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Politiques de confidentialité</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Termes et conditions</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Méthodes de livraison</a>
+            </div>
+            <div class="d-flex flex-column">
+                <h4 class="font-rammetto color-orange">Catégories</h4>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Jus de fruits</a>
+                <a href="shop_sirops.html" class="footer-link font-keep text-decoration-none color-black">Sirops</a>
+                <a href="#" class="footer-link font-keep text-decoration-none color-black">Cocktails</a>
+            </div>
+        </div>
+    </footer>
+
+<!-- <div class=" footer row bg-warning-subtle m-0 p-3 d-flex justify-content-between">
+    <div class="col-6 col-md-2 mb-3">
+      <h5>Infos</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Notre Maison</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contacts</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+      </ul>
+    </div>
+
+    
+
+    <div class="col-md-5 offset-md-1 mb-3">
+      <form>
+        <h5>Inscrivez-vous à notre newsletter</h5>
+        <p>Une petite solution alcoolisée ou non de tout ce qui est nouveau chaque mois ici.</p>
+        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+          <label for="newsletter1" class="visually-hidden">Adresse mail</label>
+          <input id="newsletter1" type="text" class="form-control" placeholder="Adresse Mail">
+          <button class="btn btn-primary" type="button">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column flex-sm-row justify-content-between pl-3 py-4 my-4 border-top">
+    <p>© 2023 The Pshhh Company, Inc. All rights reserved.</p>
+    <ul class="list-unstyled d-flex">
+      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </div> -->
+
+</html>
