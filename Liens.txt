@@ -1,3 +1,19 @@
 >> flat icons
 
 >> Raccourcis : defkey.com
+
+
+CSS Buttons>>
+15 visual effects:
+https://graphiste.com/blog/animations-css-dynamiser-boutons/
+
+sound on click button : 
+https://dev.to/shantanu_jana/how-to-play-sound-on-button-click-in-javascript-3m48
+
+
+CSS Effects>>
+Comment faire une bulle/rond en css:
+https://cssanimation.rocks/fr/spheres/
+
+Superposer deux divs : 
+https://waytolearnx.com/2019/07/comment-superposer-une-div-sur-une-autre-div-avec-css.html
