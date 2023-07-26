@@ -1,0 +1,26 @@
+Questionnaire AER Progression 25%
+https://docs.google.com/forms/d/e/1FAIpQLSdPLNOjO-ZOV5HakkBbyHQdeLQOTclq1qN0rDAxbEyuViKFjQ/viewform
+
+
+230725
+Marceau — Hier à 14:37
+@CDA34 23-01 Bonjour/re bonjour 🙂 
+
+📌 Voici quelques pistes/questions pour préparer vos oraux et vos révisions pour la partie conception
+
+🔹 Cas d'utilisation : pourquoi, à quoi ca sert ? 
+Savoir définir : Acteur, cas d'utilisation, héritage, include, extend
+
+🔹 Diagramme d'activité : pourquoi ?
+Savoir expliquer : État initial, accept signal, décision, send signal, flow final, final point
+
+🔹 Diagramme séquence : pourquoi ? 
+Présenter un scénario nominal
+Expliquer un scénario d'erreur, un scénario alternatif 
+Quelles sont les différences ? (traduction du diagramme d'activité)
+
+🔹 Maquettes : pourquoi ? 
+Présenter une maquette de zoning
+Présenter un mock-up
+Présenter une maquette de protoype 
+Suggérer une maquette mobile (mock-up uniquement)
