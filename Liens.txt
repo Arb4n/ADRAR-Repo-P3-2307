@@ -17,3 +17,18 @@ https://cssanimation.rocks/fr/spheres/
 
 Superposer deux divs : 
 https://waytolearnx.com/2019/07/comment-superposer-une-div-sur-une-autre-div-avec-css.html
+
+
+Exemple de portfolios sites web
+https://dribbble.com/shots#
+
+
+https://defkey.com/fr/figma-raccourcis-clavier Raccourcis Figma
+https://dribbble.com Inspiration visuelle
+https://www.behance.net Inspiration visuelle
+https://unsplash.com/fr Inpiration visuelle
+https://undraw.co Bibliothèque de vecteurs
+
+Carrousel vertical>>
+https://www.youtube.com/watch?v=HYvUBRlOR-g
+
