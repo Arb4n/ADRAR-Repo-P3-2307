@@ -1,0 +1,121 @@
+Questionnaire AER Progression 25%
+https://docs.google.com/forms/d/e/1FAIpQLSdPLNOjO-ZOV5HakkBbyHQdeLQOTclq1qN0rDAxbEyuViKFjQ/viewform
+
+
+230725
+Marceau — Hier à 14:37
+@CDA34 23-01 Bonjour/re bonjour 🙂 
+
+📌 Voici quelques pistes/questions pour préparer vos oraux et vos révisions pour la partie conception
+
+🔹 Cas d'utilisation : pourquoi, à quoi ca sert ? 
+Savoir définir : Acteur, cas d'utilisation, héritage, include, extend
+https://lipn.univ-paris13.fr/~gerard/uml-s2/uml-cours04.html
+
+    Cas d'utilisation : 
+    Un schéma pour représenter un système, 
+    Le cheminement de chaque acteur extérieur au sein d'un système.
+    Le comportement d'un système sous diverses conditions en réponse à la requête de 
+    tout utilisateur. 
+
+
+
+    Utilisateur : entité extérieure qui intéragit avec le système . 
+    tout acteur, administrateur, gestionnaire, mais aussi client, 
+    visiteur, utilisateur, connecté, non connecté ; tout acteur présent dans le système,
+    tout utilisateur qui intéragit avec.
+    Modélisation du système, donc, des actions possibles dessus,
+    de tous ses rouages et mécanismes, liens et intéractions entre tous 
+    ses éléments. 
+
+    Héritage : Cet héritage signifie que les éléments spécifiques héritent 
+    de tout ce qui caractérise l’élément général : - Les associations avec 
+    des acteurs - Les relations de dépendance - 
+    Les héritages déjà existant, dans lesquel l’élément général jour le rôle 
+    d’élément plus spécifique
+
+    Include : tous les liens qui représentent une action obligatoire pour en déclencher une autre.
+    Extends : tous les liens qui représent une action optionnelle imbriquée dans une autre.
+
+
+
+
+
+🔹 Diagramme d'activité : pourquoi ?
+Savoir expliquer : État initial, accept signal, décision, send signal, flow final, final point
+
+Pourquoi utiliser un diagramme d'activité ?
+Les diagrammes d'activité sont similaires aux organigrammes de traitement de l'information, 
+car ils montrent les flux entre les actions dans une activité. 
+Les diagrammes d'activité peuvent, cependant, aussi montrer les flux parallèles simultanés 
+et les flux de remplacement.
+
+Le diagramme d’activité est un organigramme permettant l’illustration d’activités/actions
+exécutées par un système d’information (SI)
+
+Etat initial 
+Accept signal
+Decision
+Send signal
+flow final
+final point
+
+
+
+🔹 Diagramme séquence : pourquoi ? 
+Présenter un scénario nominal
+Expliquer un scénario d'erreur, un scénario alternatif 
+Quelles sont les différences ? (traduction du diagramme d'activité)
+
+Pourquoi on utilise le diagramme de séquence ?
+Au cours de la phase d'analyse, les diagrammes de séquence permettent 
+d'identifier les classes requises par un système et le comportement 
+des objets de classes au cours des interactions. Vous pouvez détailler 
+les diagrammes de séquence et montrer comment un système accomplit les interactions.
+
+
+🔹 Maquettes : pourquoi ? 
+Présenter une maquette de zoning
+Présenter un mock-up
+Présenter une maquette de protoype 
+Suggérer une maquette mobile (mock-up uniquement)
+
+
+
+
+
+sophie — Hier à 12:24
+@CDA34 23-01 J'espère que vous allez bien 🙂 
+bientôt quelques jours de congés bien mérités 
+
+En attendant, nous vous proposons de présenter le début de votre projet fil rouge à savoir : 
+CDC
+maquettage/graphisme
+Use case, diag d'activité & de séquence
+
+Vous avez toutes les infos dans le salon ⁠titre-concepteur-dev ⁠titre-développeur-web-webmobile ⁠🗂projet 
+
+Les prochains oraux seront en octobre incluant : 
+le MCD/MLD
+le SQL
+le front
+
+
+
+
+La concurrence 
+
+Typologie du site
+
+Fonctionnalités
+
+Projet 
+Intervenants
+analyse fonctionnelle 
+étude des besoins
+
+
+Entp : 
+J’aime bistronomie
+Elle&Nous
+
