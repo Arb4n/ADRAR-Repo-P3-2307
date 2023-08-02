@@ -78,6 +78,7 @@ d'identifier les classes requises par un système et le comportement
 des objets de classes au cours des interactions. Vous pouvez détailler 
 les diagrammes de séquence et montrer comment un système accomplit les interactions.
 
+!!! PEnser à un scénario d'erreur ! 
 
 🔹 Maquettes : pourquoi ? 
 Présenter une maquette de zoning
